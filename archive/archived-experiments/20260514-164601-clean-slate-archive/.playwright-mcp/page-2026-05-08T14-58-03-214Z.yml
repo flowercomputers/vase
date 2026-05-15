@@ -1,0 +1,2021 @@
+- main [ref=e3]:
+  - complementary "Unicode glyph grid controls" [ref=e4]:
+    - generic [ref=e5]:
+      - heading "Unicode Grid" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Every Unicode scalar value in one continuous scroll.
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: Foreground
+        - textbox "Foreground" [ref=e11]: "#071013"
+      - generic [ref=e12]:
+        - generic [ref=e13]: Background
+        - textbox "Background" [ref=e14]: "#73dc83"
+    - generic [ref=e15]:
+      - generic [ref=e16]: Glyph size
+      - slider "Glyph size" [ref=e17]: "34"
+    - generic [ref=e18]:
+      - checkbox "show code labels" [ref=e19]
+      - generic [ref=e20]: show code labels
+  - region "Unicode glyph preview" [ref=e21]:
+    - generic [ref=e22]:
+      - strong [ref=e23]: 1,000 loaded of 1,112,064 Unicode scalar values
+      - generic [ref=e24]: Lazy loading 1,000 glyphs at a time from U+0000 to U+10FFFF
+    - generic [ref=e26]:
+      - button "U+0000" [ref=e27] [cursor=pointer]:
+        - generic [ref=e28]: ·
+      - button "U+0001" [ref=e29] [cursor=pointer]:
+        - generic [ref=e30]: ·
+      - button "U+0002" [ref=e31] [cursor=pointer]:
+        - generic [ref=e32]: ·
+      - button "U+0003" [ref=e33] [cursor=pointer]:
+        - generic [ref=e34]: ·
+      - button "U+0004" [ref=e35] [cursor=pointer]:
+        - generic [ref=e36]: ·
+      - button "U+0005" [ref=e37] [cursor=pointer]:
+        - generic [ref=e38]: ·
+      - button "U+0006" [ref=e39] [cursor=pointer]:
+        - generic [ref=e40]: ·
+      - button "U+0007" [ref=e41] [cursor=pointer]:
+        - generic [ref=e42]: ·
+      - button "U+0008" [ref=e43] [cursor=pointer]:
+        - generic [ref=e44]: ·
+      - button "U+0009" [ref=e45] [cursor=pointer]:
+        - generic [ref=e46]: ·
+      - button "U+000A" [ref=e47] [cursor=pointer]:
+        - generic [ref=e48]: ·
+      - button "U+000B" [ref=e49] [cursor=pointer]:
+        - generic [ref=e50]: ·
+      - button "U+000C" [ref=e51] [cursor=pointer]:
+        - generic [ref=e52]: ·
+      - button "U+000D" [ref=e53] [cursor=pointer]:
+        - generic [ref=e54]: ·
+      - button "U+000E" [ref=e55] [cursor=pointer]:
+        - generic [ref=e56]: ·
+      - button "U+000F" [ref=e57] [cursor=pointer]:
+        - generic [ref=e58]: ·
+      - button "U+0010" [ref=e59] [cursor=pointer]:
+        - generic [ref=e60]: ·
+      - button "U+0011" [ref=e61] [cursor=pointer]:
+        - generic [ref=e62]: ·
+      - button "U+0012" [ref=e63] [cursor=pointer]:
+        - generic [ref=e64]: ·
+      - button "U+0013" [ref=e65] [cursor=pointer]:
+        - generic [ref=e66]: ·
+      - button "U+0014" [ref=e67] [cursor=pointer]:
+        - generic [ref=e68]: ·
+      - button "U+0015" [ref=e69] [cursor=pointer]:
+        - generic [ref=e70]: ·
+      - button "U+0016" [ref=e71] [cursor=pointer]:
+        - generic [ref=e72]: ·
+      - button "U+0017" [ref=e73] [cursor=pointer]:
+        - generic [ref=e74]: ·
+      - button "U+0018" [ref=e75] [cursor=pointer]:
+        - generic [ref=e76]: ·
+      - button "U+0019" [ref=e77] [cursor=pointer]:
+        - generic [ref=e78]: ·
+      - button "U+001A" [ref=e79] [cursor=pointer]:
+        - generic [ref=e80]: ·
+      - button "U+001B" [ref=e81] [cursor=pointer]:
+        - generic [ref=e82]: ·
+      - button "U+001C" [ref=e83] [cursor=pointer]:
+        - generic [ref=e84]: ·
+      - button "U+001D" [ref=e85] [cursor=pointer]:
+        - generic [ref=e86]: ·
+      - button "U+001E" [ref=e87] [cursor=pointer]:
+        - generic [ref=e88]: ·
+      - button "U+001F" [ref=e89] [cursor=pointer]:
+        - generic [ref=e90]: ·
+      - button "U+0020" [ref=e91] [cursor=pointer]:
+        - generic [ref=e92]: Space
+      - button "U+0021" [ref=e93] [cursor=pointer]:
+        - generic [ref=e94]: "!"
+      - button "U+0022" [ref=e95] [cursor=pointer]:
+        - generic [ref=e96]: "\""
+      - button "U+0023" [ref=e97] [cursor=pointer]:
+        - generic [ref=e98]: "#"
+      - button "U+0024" [ref=e99] [cursor=pointer]:
+        - generic [ref=e100]: $
+      - button "U+0025" [ref=e101] [cursor=pointer]:
+        - generic [ref=e102]: "%"
+      - button "U+0026" [ref=e103] [cursor=pointer]:
+        - generic [ref=e104]: "&"
+      - button "U+0027" [ref=e105] [cursor=pointer]:
+        - generic [ref=e106]: "'"
+      - button "U+0028" [ref=e107] [cursor=pointer]:
+        - generic [ref=e108]: (
+      - button "U+0029" [ref=e109] [cursor=pointer]:
+        - generic [ref=e110]: )
+      - button "U+002A" [ref=e111] [cursor=pointer]:
+        - generic [ref=e112]: "*"
+      - button "U+002B" [ref=e113] [cursor=pointer]:
+        - generic [ref=e114]: +
+      - button "U+002C" [ref=e115] [cursor=pointer]:
+        - generic [ref=e116]: ","
+      - button "U+002D" [ref=e117] [cursor=pointer]:
+        - generic [ref=e118]: "-"
+      - button "U+002E" [ref=e119] [cursor=pointer]:
+        - generic [ref=e120]: .
+      - button "U+002F" [ref=e121] [cursor=pointer]:
+        - generic [ref=e122]: /
+      - button "U+0030" [ref=e123] [cursor=pointer]:
+        - generic [ref=e124]: "0"
+      - button "U+0031" [ref=e125] [cursor=pointer]:
+        - generic [ref=e126]: "1"
+      - button "U+0032" [ref=e127] [cursor=pointer]:
+        - generic [ref=e128]: "2"
+      - button "U+0033" [ref=e129] [cursor=pointer]:
+        - generic [ref=e130]: "3"
+      - button "U+0034" [ref=e131] [cursor=pointer]:
+        - generic [ref=e132]: "4"
+      - button "U+0035" [ref=e133] [cursor=pointer]:
+        - generic [ref=e134]: "5"
+      - button "U+0036" [ref=e135] [cursor=pointer]:
+        - generic [ref=e136]: "6"
+      - button "U+0037" [ref=e137] [cursor=pointer]:
+        - generic [ref=e138]: "7"
+      - button "U+0038" [ref=e139] [cursor=pointer]:
+        - generic [ref=e140]: "8"
+      - button "U+0039" [ref=e141] [cursor=pointer]:
+        - generic [ref=e142]: "9"
+      - button "U+003A" [ref=e143] [cursor=pointer]:
+        - generic [ref=e144]: ":"
+      - button "U+003B" [ref=e145] [cursor=pointer]:
+        - generic [ref=e146]: ;
+      - button "U+003C" [ref=e147] [cursor=pointer]:
+        - generic [ref=e148]: <
+      - button "U+003D" [ref=e149] [cursor=pointer]:
+        - generic [ref=e150]: =
+      - button "U+003E" [ref=e151] [cursor=pointer]:
+        - generic [ref=e152]: ">"
+      - button "U+003F" [ref=e153] [cursor=pointer]:
+        - generic [ref=e154]: "?"
+      - button "U+0040" [ref=e155] [cursor=pointer]:
+        - generic [ref=e156]: "@"
+      - button "U+0041" [ref=e157] [cursor=pointer]:
+        - generic [ref=e158]: A
+      - button "U+0042" [ref=e159] [cursor=pointer]:
+        - generic [ref=e160]: B
+      - button "U+0043" [ref=e161] [cursor=pointer]:
+        - generic [ref=e162]: C
+      - button "U+0044" [ref=e163] [cursor=pointer]:
+        - generic [ref=e164]: D
+      - button "U+0045" [ref=e165] [cursor=pointer]:
+        - generic [ref=e166]: E
+      - button "U+0046" [ref=e167] [cursor=pointer]:
+        - generic [ref=e168]: F
+      - button "U+0047" [ref=e169] [cursor=pointer]:
+        - generic [ref=e170]: G
+      - button "U+0048" [ref=e171] [cursor=pointer]:
+        - generic [ref=e172]: H
+      - button "U+0049" [ref=e173] [cursor=pointer]:
+        - generic [ref=e174]: I
+      - button "U+004A" [ref=e175] [cursor=pointer]:
+        - generic [ref=e176]: J
+      - button "U+004B" [ref=e177] [cursor=pointer]:
+        - generic [ref=e178]: K
+      - button "U+004C" [ref=e179] [cursor=pointer]:
+        - generic [ref=e180]: L
+      - button "U+004D" [ref=e181] [cursor=pointer]:
+        - generic [ref=e182]: M
+      - button "U+004E" [ref=e183] [cursor=pointer]:
+        - generic [ref=e184]: "N"
+      - button "U+004F" [ref=e185] [cursor=pointer]:
+        - generic [ref=e186]: O
+      - button "U+0050" [ref=e187] [cursor=pointer]:
+        - generic [ref=e188]: P
+      - button "U+0051" [ref=e189] [cursor=pointer]:
+        - generic [ref=e190]: Q
+      - button "U+0052" [ref=e191] [cursor=pointer]:
+        - generic [ref=e192]: R
+      - button "U+0053" [ref=e193] [cursor=pointer]:
+        - generic [ref=e194]: S
+      - button "U+0054" [ref=e195] [cursor=pointer]:
+        - generic [ref=e196]: T
+      - button "U+0055" [ref=e197] [cursor=pointer]:
+        - generic [ref=e198]: U
+      - button "U+0056" [ref=e199] [cursor=pointer]:
+        - generic [ref=e200]: V
+      - button "U+0057" [ref=e201] [cursor=pointer]:
+        - generic [ref=e202]: W
+      - button "U+0058" [ref=e203] [cursor=pointer]:
+        - generic [ref=e204]: X
+      - button "U+0059" [ref=e205] [cursor=pointer]:
+        - generic [ref=e206]: "Y"
+      - button "U+005A" [ref=e207] [cursor=pointer]:
+        - generic [ref=e208]: Z
+      - button "U+005B" [ref=e209] [cursor=pointer]:
+        - generic [ref=e210]: "["
+      - button "U+005C" [ref=e211] [cursor=pointer]:
+        - generic [ref=e212]: \
+      - button "U+005D" [ref=e213] [cursor=pointer]:
+        - generic [ref=e214]: "]"
+      - button "U+005E" [ref=e215] [cursor=pointer]:
+        - generic [ref=e216]: ^
+      - button "U+005F" [ref=e217] [cursor=pointer]:
+        - generic [ref=e218]: _
+      - button "U+0060" [ref=e219] [cursor=pointer]:
+        - generic [ref=e220]: "`"
+      - button "U+0061" [ref=e221] [cursor=pointer]:
+        - generic [ref=e222]: a
+      - button "U+0062" [ref=e223] [cursor=pointer]:
+        - generic [ref=e224]: b
+      - button "U+0063" [ref=e225] [cursor=pointer]:
+        - generic [ref=e226]: c
+      - button "U+0064" [ref=e227] [cursor=pointer]:
+        - generic [ref=e228]: d
+      - button "U+0065" [ref=e229] [cursor=pointer]:
+        - generic [ref=e230]: e
+      - button "U+0066" [ref=e231] [cursor=pointer]:
+        - generic [ref=e232]: f
+      - button "U+0067" [ref=e233] [cursor=pointer]:
+        - generic [ref=e234]: g
+      - button "U+0068" [ref=e235] [cursor=pointer]:
+        - generic [ref=e236]: h
+      - button "U+0069" [ref=e237] [cursor=pointer]:
+        - generic [ref=e238]: i
+      - button "U+006A" [ref=e239] [cursor=pointer]:
+        - generic [ref=e240]: j
+      - button "U+006B" [ref=e241] [cursor=pointer]:
+        - generic [ref=e242]: k
+      - button "U+006C" [ref=e243] [cursor=pointer]:
+        - generic [ref=e244]: l
+      - button "U+006D" [ref=e245] [cursor=pointer]:
+        - generic [ref=e246]: m
+      - button "U+006E" [ref=e247] [cursor=pointer]:
+        - generic [ref=e248]: "n"
+      - button "U+006F" [ref=e249] [cursor=pointer]:
+        - generic [ref=e250]: o
+      - button "U+0070" [ref=e251] [cursor=pointer]:
+        - generic [ref=e252]: p
+      - button "U+0071" [ref=e253] [cursor=pointer]:
+        - generic [ref=e254]: q
+      - button "U+0072" [ref=e255] [cursor=pointer]:
+        - generic [ref=e256]: r
+      - button "U+0073" [ref=e257] [cursor=pointer]:
+        - generic [ref=e258]: s
+      - button "U+0074" [ref=e259] [cursor=pointer]:
+        - generic [ref=e260]: t
+      - button "U+0075" [ref=e261] [cursor=pointer]:
+        - generic [ref=e262]: u
+      - button "U+0076" [ref=e263] [cursor=pointer]:
+        - generic [ref=e264]: v
+      - button "U+0077" [ref=e265] [cursor=pointer]:
+        - generic [ref=e266]: w
+      - button "U+0078" [ref=e267] [cursor=pointer]:
+        - generic [ref=e268]: x
+      - button "U+0079" [ref=e269] [cursor=pointer]:
+        - generic [ref=e270]: "y"
+      - button "U+007A" [ref=e271] [cursor=pointer]:
+        - generic [ref=e272]: z
+      - button "U+007B" [ref=e273] [cursor=pointer]:
+        - generic [ref=e274]: "{"
+      - button "U+007C" [ref=e275] [cursor=pointer]:
+        - generic [ref=e276]: "|"
+      - button "U+007D" [ref=e277] [cursor=pointer]:
+        - generic [ref=e278]: "}"
+      - button "U+007E" [ref=e279] [cursor=pointer]:
+        - generic [ref=e280]: ~
+      - button "U+007F" [ref=e281] [cursor=pointer]:
+        - generic [ref=e282]: ·
+      - button "U+0080" [ref=e283] [cursor=pointer]:
+        - generic [ref=e284]: ·
+      - button "U+0081" [ref=e285] [cursor=pointer]:
+        - generic [ref=e286]: ·
+      - button "U+0082" [ref=e287] [cursor=pointer]:
+        - generic [ref=e288]: ·
+      - button "U+0083" [ref=e289] [cursor=pointer]:
+        - generic [ref=e290]: ·
+      - button "U+0084" [ref=e291] [cursor=pointer]:
+        - generic [ref=e292]: ·
+      - button "U+0085" [ref=e293] [cursor=pointer]:
+        - generic [ref=e294]: ·
+      - button "U+0086" [ref=e295] [cursor=pointer]:
+        - generic [ref=e296]: ·
+      - button "U+0087" [ref=e297] [cursor=pointer]:
+        - generic [ref=e298]: ·
+      - button "U+0088" [ref=e299] [cursor=pointer]:
+        - generic [ref=e300]: ·
+      - button "U+0089" [ref=e301] [cursor=pointer]:
+        - generic [ref=e302]: ·
+      - button "U+008A" [ref=e303] [cursor=pointer]:
+        - generic [ref=e304]: ·
+      - button "U+008B" [ref=e305] [cursor=pointer]:
+        - generic [ref=e306]: ·
+      - button "U+008C" [ref=e307] [cursor=pointer]:
+        - generic [ref=e308]: ·
+      - button "U+008D" [ref=e309] [cursor=pointer]:
+        - generic [ref=e310]: ·
+      - button "U+008E" [ref=e311] [cursor=pointer]:
+        - generic [ref=e312]: ·
+      - button "U+008F" [ref=e313] [cursor=pointer]:
+        - generic [ref=e314]: ·
+      - button "U+0090" [ref=e315] [cursor=pointer]:
+        - generic [ref=e316]: ·
+      - button "U+0091" [ref=e317] [cursor=pointer]:
+        - generic [ref=e318]: ·
+      - button "U+0092" [ref=e319] [cursor=pointer]:
+        - generic [ref=e320]: ·
+      - button "U+0093" [ref=e321] [cursor=pointer]:
+        - generic [ref=e322]: ·
+      - button "U+0094" [ref=e323] [cursor=pointer]:
+        - generic [ref=e324]: ·
+      - button "U+0095" [ref=e325] [cursor=pointer]:
+        - generic [ref=e326]: ·
+      - button "U+0096" [ref=e327] [cursor=pointer]:
+        - generic [ref=e328]: ·
+      - button "U+0097" [ref=e329] [cursor=pointer]:
+        - generic [ref=e330]: ·
+      - button "U+0098" [ref=e331] [cursor=pointer]:
+        - generic [ref=e332]: ·
+      - button "U+0099" [ref=e333] [cursor=pointer]:
+        - generic [ref=e334]: ·
+      - button "U+009A" [ref=e335] [cursor=pointer]:
+        - generic [ref=e336]: ·
+      - button "U+009B" [ref=e337] [cursor=pointer]:
+        - generic [ref=e338]: ·
+      - button "U+009C" [ref=e339] [cursor=pointer]:
+        - generic [ref=e340]: ·
+      - button "U+009D" [ref=e341] [cursor=pointer]:
+        - generic [ref=e342]: ·
+      - button "U+009E" [ref=e343] [cursor=pointer]:
+        - generic [ref=e344]: ·
+      - button "U+009F" [ref=e345] [cursor=pointer]:
+        - generic [ref=e346]: ·
+      - button "U+00A0" [ref=e347] [cursor=pointer]
+      - button "U+00A1" [ref=e349] [cursor=pointer]:
+        - generic [ref=e350]: ¡
+      - button "U+00A2" [ref=e351] [cursor=pointer]:
+        - generic [ref=e352]: ¢
+      - button "U+00A3" [ref=e353] [cursor=pointer]:
+        - generic [ref=e354]: £
+      - button "U+00A4" [ref=e355] [cursor=pointer]:
+        - generic [ref=e356]: ¤
+      - button "U+00A5" [ref=e357] [cursor=pointer]:
+        - generic [ref=e358]: ¥
+      - button "U+00A6" [ref=e359] [cursor=pointer]:
+        - generic [ref=e360]: ¦
+      - button "U+00A7" [ref=e361] [cursor=pointer]:
+        - generic [ref=e362]: §
+      - button "U+00A8" [ref=e363] [cursor=pointer]:
+        - generic [ref=e364]: ¨
+      - button "U+00A9" [ref=e365] [cursor=pointer]:
+        - generic [ref=e366]: ©
+      - button "U+00AA" [ref=e367] [cursor=pointer]:
+        - generic [ref=e368]: ª
+      - button "U+00AB" [ref=e369] [cursor=pointer]:
+        - generic [ref=e370]: «
+      - button "U+00AC" [ref=e371] [cursor=pointer]:
+        - generic [ref=e372]: ¬
+      - button "U+00AD" [ref=e373] [cursor=pointer]
+      - button "U+00AE" [ref=e375] [cursor=pointer]:
+        - generic [ref=e376]: ®
+      - button "U+00AF" [ref=e377] [cursor=pointer]:
+        - generic [ref=e378]: ¯
+      - button "U+00B0" [ref=e379] [cursor=pointer]:
+        - generic [ref=e380]: °
+      - button "U+00B1" [ref=e381] [cursor=pointer]:
+        - generic [ref=e382]: ±
+      - button "U+00B2" [ref=e383] [cursor=pointer]:
+        - generic [ref=e384]: ²
+      - button "U+00B3" [ref=e385] [cursor=pointer]:
+        - generic [ref=e386]: ³
+      - button "U+00B4" [ref=e387] [cursor=pointer]:
+        - generic [ref=e388]: ´
+      - button "U+00B5" [ref=e389] [cursor=pointer]:
+        - generic [ref=e390]: µ
+      - button "U+00B6" [ref=e391] [cursor=pointer]:
+        - generic [ref=e392]: ¶
+      - button "U+00B7" [ref=e393] [cursor=pointer]:
+        - generic [ref=e394]: ·
+      - button "U+00B8" [ref=e395] [cursor=pointer]:
+        - generic [ref=e396]: ¸
+      - button "U+00B9" [ref=e397] [cursor=pointer]:
+        - generic [ref=e398]: ¹
+      - button "U+00BA" [ref=e399] [cursor=pointer]:
+        - generic [ref=e400]: º
+      - button "U+00BB" [ref=e401] [cursor=pointer]:
+        - generic [ref=e402]: »
+      - button "U+00BC" [ref=e403] [cursor=pointer]:
+        - generic [ref=e404]: ¼
+      - button "U+00BD" [ref=e405] [cursor=pointer]:
+        - generic [ref=e406]: ½
+      - button "U+00BE" [ref=e407] [cursor=pointer]:
+        - generic [ref=e408]: ¾
+      - button "U+00BF" [ref=e409] [cursor=pointer]:
+        - generic [ref=e410]: ¿
+      - button "U+00C0" [ref=e411] [cursor=pointer]:
+        - generic [ref=e412]: À
+      - button "U+00C1" [ref=e413] [cursor=pointer]:
+        - generic [ref=e414]: Á
+      - button "U+00C2" [ref=e415] [cursor=pointer]:
+        - generic [ref=e416]: Â
+      - button "U+00C3" [ref=e417] [cursor=pointer]:
+        - generic [ref=e418]: Ã
+      - button "U+00C4" [ref=e419] [cursor=pointer]:
+        - generic [ref=e420]: Ä
+      - button "U+00C5" [ref=e421] [cursor=pointer]:
+        - generic [ref=e422]: Å
+      - button "U+00C6" [ref=e423] [cursor=pointer]:
+        - generic [ref=e424]: Æ
+      - button "U+00C7" [ref=e425] [cursor=pointer]:
+        - generic [ref=e426]: Ç
+      - button "U+00C8" [ref=e427] [cursor=pointer]:
+        - generic [ref=e428]: È
+      - button "U+00C9" [ref=e429] [cursor=pointer]:
+        - generic [ref=e430]: É
+      - button "U+00CA" [ref=e431] [cursor=pointer]:
+        - generic [ref=e432]: Ê
+      - button "U+00CB" [ref=e433] [cursor=pointer]:
+        - generic [ref=e434]: Ë
+      - button "U+00CC" [ref=e435] [cursor=pointer]:
+        - generic [ref=e436]: Ì
+      - button "U+00CD" [ref=e437] [cursor=pointer]:
+        - generic [ref=e438]: Í
+      - button "U+00CE" [ref=e439] [cursor=pointer]:
+        - generic [ref=e440]: Î
+      - button "U+00CF" [ref=e441] [cursor=pointer]:
+        - generic [ref=e442]: Ï
+      - button "U+00D0" [ref=e443] [cursor=pointer]:
+        - generic [ref=e444]: Ð
+      - button "U+00D1" [ref=e445] [cursor=pointer]:
+        - generic [ref=e446]: Ñ
+      - button "U+00D2" [ref=e447] [cursor=pointer]:
+        - generic [ref=e448]: Ò
+      - button "U+00D3" [ref=e449] [cursor=pointer]:
+        - generic [ref=e450]: Ó
+      - button "U+00D4" [ref=e451] [cursor=pointer]:
+        - generic [ref=e452]: Ô
+      - button "U+00D5" [ref=e453] [cursor=pointer]:
+        - generic [ref=e454]: Õ
+      - button "U+00D6" [ref=e455] [cursor=pointer]:
+        - generic [ref=e456]: Ö
+      - button "U+00D7" [ref=e457] [cursor=pointer]:
+        - generic [ref=e458]: ×
+      - button "U+00D8" [ref=e459] [cursor=pointer]:
+        - generic [ref=e460]: Ø
+      - button "U+00D9" [ref=e461] [cursor=pointer]:
+        - generic [ref=e462]: Ù
+      - button "U+00DA" [ref=e463] [cursor=pointer]:
+        - generic [ref=e464]: Ú
+      - button "U+00DB" [ref=e465] [cursor=pointer]:
+        - generic [ref=e466]: Û
+      - button "U+00DC" [ref=e467] [cursor=pointer]:
+        - generic [ref=e468]: Ü
+      - button "U+00DD" [ref=e469] [cursor=pointer]:
+        - generic [ref=e470]: Ý
+      - button "U+00DE" [ref=e471] [cursor=pointer]:
+        - generic [ref=e472]: Þ
+      - button "U+00DF" [ref=e473] [cursor=pointer]:
+        - generic [ref=e474]: ß
+      - button "U+00E0" [ref=e475] [cursor=pointer]:
+        - generic [ref=e476]: à
+      - button "U+00E1" [ref=e477] [cursor=pointer]:
+        - generic [ref=e478]: á
+      - button "U+00E2" [ref=e479] [cursor=pointer]:
+        - generic [ref=e480]: â
+      - button "U+00E3" [ref=e481] [cursor=pointer]:
+        - generic [ref=e482]: ã
+      - button "U+00E4" [ref=e483] [cursor=pointer]:
+        - generic [ref=e484]: ä
+      - button "U+00E5" [ref=e485] [cursor=pointer]:
+        - generic [ref=e486]: å
+      - button "U+00E6" [ref=e487] [cursor=pointer]:
+        - generic [ref=e488]: æ
+      - button "U+00E7" [ref=e489] [cursor=pointer]:
+        - generic [ref=e490]: ç
+      - button "U+00E8" [ref=e491] [cursor=pointer]:
+        - generic [ref=e492]: è
+      - button "U+00E9" [ref=e493] [cursor=pointer]:
+        - generic [ref=e494]: é
+      - button "U+00EA" [ref=e495] [cursor=pointer]:
+        - generic [ref=e496]: ê
+      - button "U+00EB" [ref=e497] [cursor=pointer]:
+        - generic [ref=e498]: ë
+      - button "U+00EC" [ref=e499] [cursor=pointer]:
+        - generic [ref=e500]: ì
+      - button "U+00ED" [ref=e501] [cursor=pointer]:
+        - generic [ref=e502]: í
+      - button "U+00EE" [ref=e503] [cursor=pointer]:
+        - generic [ref=e504]: î
+      - button "U+00EF" [ref=e505] [cursor=pointer]:
+        - generic [ref=e506]: ï
+      - button "U+00F0" [ref=e507] [cursor=pointer]:
+        - generic [ref=e508]: ð
+      - button "U+00F1" [ref=e509] [cursor=pointer]:
+        - generic [ref=e510]: ñ
+      - button "U+00F2" [ref=e511] [cursor=pointer]:
+        - generic [ref=e512]: ò
+      - button "U+00F3" [ref=e513] [cursor=pointer]:
+        - generic [ref=e514]: ó
+      - button "U+00F4" [ref=e515] [cursor=pointer]:
+        - generic [ref=e516]: ô
+      - button "U+00F5" [ref=e517] [cursor=pointer]:
+        - generic [ref=e518]: õ
+      - button "U+00F6" [ref=e519] [cursor=pointer]:
+        - generic [ref=e520]: ö
+      - button "U+00F7" [ref=e521] [cursor=pointer]:
+        - generic [ref=e522]: ÷
+      - button "U+00F8" [ref=e523] [cursor=pointer]:
+        - generic [ref=e524]: ø
+      - button "U+00F9" [ref=e525] [cursor=pointer]:
+        - generic [ref=e526]: ù
+      - button "U+00FA" [ref=e527] [cursor=pointer]:
+        - generic [ref=e528]: ú
+      - button "U+00FB" [ref=e529] [cursor=pointer]:
+        - generic [ref=e530]: û
+      - button "U+00FC" [ref=e531] [cursor=pointer]:
+        - generic [ref=e532]: ü
+      - button "U+00FD" [ref=e533] [cursor=pointer]:
+        - generic [ref=e534]: ý
+      - button "U+00FE" [ref=e535] [cursor=pointer]:
+        - generic [ref=e536]: þ
+      - button "U+00FF" [ref=e537] [cursor=pointer]:
+        - generic [ref=e538]: ÿ
+      - button "U+0100" [ref=e539] [cursor=pointer]:
+        - generic [ref=e540]: Ā
+      - button "U+0101" [ref=e541] [cursor=pointer]:
+        - generic [ref=e542]: ā
+      - button "U+0102" [ref=e543] [cursor=pointer]:
+        - generic [ref=e544]: Ă
+      - button "U+0103" [ref=e545] [cursor=pointer]:
+        - generic [ref=e546]: ă
+      - button "U+0104" [ref=e547] [cursor=pointer]:
+        - generic [ref=e548]: Ą
+      - button "U+0105" [ref=e549] [cursor=pointer]:
+        - generic [ref=e550]: ą
+      - button "U+0106" [ref=e551] [cursor=pointer]:
+        - generic [ref=e552]: Ć
+      - button "U+0107" [ref=e553] [cursor=pointer]:
+        - generic [ref=e554]: ć
+      - button "U+0108" [ref=e555] [cursor=pointer]:
+        - generic [ref=e556]: Ĉ
+      - button "U+0109" [ref=e557] [cursor=pointer]:
+        - generic [ref=e558]: ĉ
+      - button "U+010A" [ref=e559] [cursor=pointer]:
+        - generic [ref=e560]: Ċ
+      - button "U+010B" [ref=e561] [cursor=pointer]:
+        - generic [ref=e562]: ċ
+      - button "U+010C" [ref=e563] [cursor=pointer]:
+        - generic [ref=e564]: Č
+      - button "U+010D" [ref=e565] [cursor=pointer]:
+        - generic [ref=e566]: č
+      - button "U+010E" [ref=e567] [cursor=pointer]:
+        - generic [ref=e568]: Ď
+      - button "U+010F" [ref=e569] [cursor=pointer]:
+        - generic [ref=e570]: ď
+      - button "U+0110" [ref=e571] [cursor=pointer]:
+        - generic [ref=e572]: Đ
+      - button "U+0111" [ref=e573] [cursor=pointer]:
+        - generic [ref=e574]: đ
+      - button "U+0112" [ref=e575] [cursor=pointer]:
+        - generic [ref=e576]: Ē
+      - button "U+0113" [ref=e577] [cursor=pointer]:
+        - generic [ref=e578]: ē
+      - button "U+0114" [ref=e579] [cursor=pointer]:
+        - generic [ref=e580]: Ĕ
+      - button "U+0115" [ref=e581] [cursor=pointer]:
+        - generic [ref=e582]: ĕ
+      - button "U+0116" [ref=e583] [cursor=pointer]:
+        - generic [ref=e584]: Ė
+      - button "U+0117" [ref=e585] [cursor=pointer]:
+        - generic [ref=e586]: ė
+      - button "U+0118" [ref=e587] [cursor=pointer]:
+        - generic [ref=e588]: Ę
+      - button "U+0119" [ref=e589] [cursor=pointer]:
+        - generic [ref=e590]: ę
+      - button "U+011A" [ref=e591] [cursor=pointer]:
+        - generic [ref=e592]: Ě
+      - button "U+011B" [ref=e593] [cursor=pointer]:
+        - generic [ref=e594]: ě
+      - button "U+011C" [ref=e595] [cursor=pointer]:
+        - generic [ref=e596]: Ĝ
+      - button "U+011D" [ref=e597] [cursor=pointer]:
+        - generic [ref=e598]: ĝ
+      - button "U+011E" [ref=e599] [cursor=pointer]:
+        - generic [ref=e600]: Ğ
+      - button "U+011F" [ref=e601] [cursor=pointer]:
+        - generic [ref=e602]: ğ
+      - button "U+0120" [ref=e603] [cursor=pointer]:
+        - generic [ref=e604]: Ġ
+      - button "U+0121" [ref=e605] [cursor=pointer]:
+        - generic [ref=e606]: ġ
+      - button "U+0122" [ref=e607] [cursor=pointer]:
+        - generic [ref=e608]: Ģ
+      - button "U+0123" [ref=e609] [cursor=pointer]:
+        - generic [ref=e610]: ģ
+      - button "U+0124" [ref=e611] [cursor=pointer]:
+        - generic [ref=e612]: Ĥ
+      - button "U+0125" [ref=e613] [cursor=pointer]:
+        - generic [ref=e614]: ĥ
+      - button "U+0126" [ref=e615] [cursor=pointer]:
+        - generic [ref=e616]: Ħ
+      - button "U+0127" [ref=e617] [cursor=pointer]:
+        - generic [ref=e618]: ħ
+      - button "U+0128" [ref=e619] [cursor=pointer]:
+        - generic [ref=e620]: Ĩ
+      - button "U+0129" [ref=e621] [cursor=pointer]:
+        - generic [ref=e622]: ĩ
+      - button "U+012A" [ref=e623] [cursor=pointer]:
+        - generic [ref=e624]: Ī
+      - button "U+012B" [ref=e625] [cursor=pointer]:
+        - generic [ref=e626]: ī
+      - button "U+012C" [ref=e627] [cursor=pointer]:
+        - generic [ref=e628]: Ĭ
+      - button "U+012D" [ref=e629] [cursor=pointer]:
+        - generic [ref=e630]: ĭ
+      - button "U+012E" [ref=e631] [cursor=pointer]:
+        - generic [ref=e632]: Į
+      - button "U+012F" [ref=e633] [cursor=pointer]:
+        - generic [ref=e634]: į
+      - button "U+0130" [ref=e635] [cursor=pointer]:
+        - generic [ref=e636]: İ
+      - button "U+0131" [ref=e637] [cursor=pointer]:
+        - generic [ref=e638]: ı
+      - button "U+0132" [ref=e639] [cursor=pointer]:
+        - generic [ref=e640]: Ĳ
+      - button "U+0133" [ref=e641] [cursor=pointer]:
+        - generic [ref=e642]: ĳ
+      - button "U+0134" [ref=e643] [cursor=pointer]:
+        - generic [ref=e644]: Ĵ
+      - button "U+0135" [ref=e645] [cursor=pointer]:
+        - generic [ref=e646]: ĵ
+      - button "U+0136" [ref=e647] [cursor=pointer]:
+        - generic [ref=e648]: Ķ
+      - button "U+0137" [ref=e649] [cursor=pointer]:
+        - generic [ref=e650]: ķ
+      - button "U+0138" [ref=e651] [cursor=pointer]:
+        - generic [ref=e652]: ĸ
+      - button "U+0139" [ref=e653] [cursor=pointer]:
+        - generic [ref=e654]: Ĺ
+      - button "U+013A" [ref=e655] [cursor=pointer]:
+        - generic [ref=e656]: ĺ
+      - button "U+013B" [ref=e657] [cursor=pointer]:
+        - generic [ref=e658]: Ļ
+      - button "U+013C" [ref=e659] [cursor=pointer]:
+        - generic [ref=e660]: ļ
+      - button "U+013D" [ref=e661] [cursor=pointer]:
+        - generic [ref=e662]: Ľ
+      - button "U+013E" [ref=e663] [cursor=pointer]:
+        - generic [ref=e664]: ľ
+      - button "U+013F" [ref=e665] [cursor=pointer]:
+        - generic [ref=e666]: Ŀ
+      - button "U+0140" [ref=e667] [cursor=pointer]:
+        - generic [ref=e668]: ŀ
+      - button "U+0141" [ref=e669] [cursor=pointer]:
+        - generic [ref=e670]: Ł
+      - button "U+0142" [ref=e671] [cursor=pointer]:
+        - generic [ref=e672]: ł
+      - button "U+0143" [ref=e673] [cursor=pointer]:
+        - generic [ref=e674]: Ń
+      - button "U+0144" [ref=e675] [cursor=pointer]:
+        - generic [ref=e676]: ń
+      - button "U+0145" [ref=e677] [cursor=pointer]:
+        - generic [ref=e678]: Ņ
+      - button "U+0146" [ref=e679] [cursor=pointer]:
+        - generic [ref=e680]: ņ
+      - button "U+0147" [ref=e681] [cursor=pointer]:
+        - generic [ref=e682]: Ň
+      - button "U+0148" [ref=e683] [cursor=pointer]:
+        - generic [ref=e684]: ň
+      - button "U+0149" [ref=e685] [cursor=pointer]:
+        - generic [ref=e686]: ŉ
+      - button "U+014A" [ref=e687] [cursor=pointer]:
+        - generic [ref=e688]: Ŋ
+      - button "U+014B" [ref=e689] [cursor=pointer]:
+        - generic [ref=e690]: ŋ
+      - button "U+014C" [ref=e691] [cursor=pointer]:
+        - generic [ref=e692]: Ō
+      - button "U+014D" [ref=e693] [cursor=pointer]:
+        - generic [ref=e694]: ō
+      - button "U+014E" [ref=e695] [cursor=pointer]:
+        - generic [ref=e696]: Ŏ
+      - button "U+014F" [ref=e697] [cursor=pointer]:
+        - generic [ref=e698]: ŏ
+      - button "U+0150" [ref=e699] [cursor=pointer]:
+        - generic [ref=e700]: Ő
+      - button "U+0151" [ref=e701] [cursor=pointer]:
+        - generic [ref=e702]: ő
+      - button "U+0152" [ref=e703] [cursor=pointer]:
+        - generic [ref=e704]: Œ
+      - button "U+0153" [ref=e705] [cursor=pointer]:
+        - generic [ref=e706]: œ
+      - button "U+0154" [ref=e707] [cursor=pointer]:
+        - generic [ref=e708]: Ŕ
+      - button "U+0155" [ref=e709] [cursor=pointer]:
+        - generic [ref=e710]: ŕ
+      - button "U+0156" [ref=e711] [cursor=pointer]:
+        - generic [ref=e712]: Ŗ
+      - button "U+0157" [ref=e713] [cursor=pointer]:
+        - generic [ref=e714]: ŗ
+      - button "U+0158" [ref=e715] [cursor=pointer]:
+        - generic [ref=e716]: Ř
+      - button "U+0159" [ref=e717] [cursor=pointer]:
+        - generic [ref=e718]: ř
+      - button "U+015A" [ref=e719] [cursor=pointer]:
+        - generic [ref=e720]: Ś
+      - button "U+015B" [ref=e721] [cursor=pointer]:
+        - generic [ref=e722]: ś
+      - button "U+015C" [ref=e723] [cursor=pointer]:
+        - generic [ref=e724]: Ŝ
+      - button "U+015D" [ref=e725] [cursor=pointer]:
+        - generic [ref=e726]: ŝ
+      - button "U+015E" [ref=e727] [cursor=pointer]:
+        - generic [ref=e728]: Ş
+      - button "U+015F" [ref=e729] [cursor=pointer]:
+        - generic [ref=e730]: ş
+      - button "U+0160" [ref=e731] [cursor=pointer]:
+        - generic [ref=e732]: Š
+      - button "U+0161" [ref=e733] [cursor=pointer]:
+        - generic [ref=e734]: š
+      - button "U+0162" [ref=e735] [cursor=pointer]:
+        - generic [ref=e736]: Ţ
+      - button "U+0163" [ref=e737] [cursor=pointer]:
+        - generic [ref=e738]: ţ
+      - button "U+0164" [ref=e739] [cursor=pointer]:
+        - generic [ref=e740]: Ť
+      - button "U+0165" [ref=e741] [cursor=pointer]:
+        - generic [ref=e742]: ť
+      - button "U+0166" [ref=e743] [cursor=pointer]:
+        - generic [ref=e744]: Ŧ
+      - button "U+0167" [ref=e745] [cursor=pointer]:
+        - generic [ref=e746]: ŧ
+      - button "U+0168" [ref=e747] [cursor=pointer]:
+        - generic [ref=e748]: Ũ
+      - button "U+0169" [ref=e749] [cursor=pointer]:
+        - generic [ref=e750]: ũ
+      - button "U+016A" [ref=e751] [cursor=pointer]:
+        - generic [ref=e752]: Ū
+      - button "U+016B" [ref=e753] [cursor=pointer]:
+        - generic [ref=e754]: ū
+      - button "U+016C" [ref=e755] [cursor=pointer]:
+        - generic [ref=e756]: Ŭ
+      - button "U+016D" [ref=e757] [cursor=pointer]:
+        - generic [ref=e758]: ŭ
+      - button "U+016E" [ref=e759] [cursor=pointer]:
+        - generic [ref=e760]: Ů
+      - button "U+016F" [ref=e761] [cursor=pointer]:
+        - generic [ref=e762]: ů
+      - button "U+0170" [ref=e763] [cursor=pointer]:
+        - generic [ref=e764]: Ű
+      - button "U+0171" [ref=e765] [cursor=pointer]:
+        - generic [ref=e766]: ű
+      - button "U+0172" [ref=e767] [cursor=pointer]:
+        - generic [ref=e768]: Ų
+      - button "U+0173" [ref=e769] [cursor=pointer]:
+        - generic [ref=e770]: ų
+      - button "U+0174" [ref=e771] [cursor=pointer]:
+        - generic [ref=e772]: Ŵ
+      - button "U+0175" [ref=e773] [cursor=pointer]:
+        - generic [ref=e774]: ŵ
+      - button "U+0176" [ref=e775] [cursor=pointer]:
+        - generic [ref=e776]: Ŷ
+      - button "U+0177" [ref=e777] [cursor=pointer]:
+        - generic [ref=e778]: ŷ
+      - button "U+0178" [ref=e779] [cursor=pointer]:
+        - generic [ref=e780]: Ÿ
+      - button "U+0179" [ref=e781] [cursor=pointer]:
+        - generic [ref=e782]: Ź
+      - button "U+017A" [ref=e783] [cursor=pointer]:
+        - generic [ref=e784]: ź
+      - button "U+017B" [ref=e785] [cursor=pointer]:
+        - generic [ref=e786]: Ż
+      - button "U+017C" [ref=e787] [cursor=pointer]:
+        - generic [ref=e788]: ż
+      - button "U+017D" [ref=e789] [cursor=pointer]:
+        - generic [ref=e790]: Ž
+      - button "U+017E" [ref=e791] [cursor=pointer]:
+        - generic [ref=e792]: ž
+      - button "U+017F" [ref=e793] [cursor=pointer]:
+        - generic [ref=e794]: ſ
+      - button "U+0180" [ref=e795] [cursor=pointer]:
+        - generic [ref=e796]: ƀ
+      - button "U+0181" [ref=e797] [cursor=pointer]:
+        - generic [ref=e798]: Ɓ
+      - button "U+0182" [ref=e799] [cursor=pointer]:
+        - generic [ref=e800]: Ƃ
+      - button "U+0183" [ref=e801] [cursor=pointer]:
+        - generic [ref=e802]: ƃ
+      - button "U+0184" [ref=e803] [cursor=pointer]:
+        - generic [ref=e804]: Ƅ
+      - button "U+0185" [ref=e805] [cursor=pointer]:
+        - generic [ref=e806]: ƅ
+      - button "U+0186" [ref=e807] [cursor=pointer]:
+        - generic [ref=e808]: Ɔ
+      - button "U+0187" [ref=e809] [cursor=pointer]:
+        - generic [ref=e810]: Ƈ
+      - button "U+0188" [ref=e811] [cursor=pointer]:
+        - generic [ref=e812]: ƈ
+      - button "U+0189" [ref=e813] [cursor=pointer]:
+        - generic [ref=e814]: Ɖ
+      - button "U+018A" [ref=e815] [cursor=pointer]:
+        - generic [ref=e816]: Ɗ
+      - button "U+018B" [ref=e817] [cursor=pointer]:
+        - generic [ref=e818]: Ƌ
+      - button "U+018C" [ref=e819] [cursor=pointer]:
+        - generic [ref=e820]: ƌ
+      - button "U+018D" [ref=e821] [cursor=pointer]:
+        - generic [ref=e822]: ƍ
+      - button "U+018E" [ref=e823] [cursor=pointer]:
+        - generic [ref=e824]: Ǝ
+      - button "U+018F" [ref=e825] [cursor=pointer]:
+        - generic [ref=e826]: Ə
+      - button "U+0190" [ref=e827] [cursor=pointer]:
+        - generic [ref=e828]: Ɛ
+      - button "U+0191" [ref=e829] [cursor=pointer]:
+        - generic [ref=e830]: Ƒ
+      - button "U+0192" [ref=e831] [cursor=pointer]:
+        - generic [ref=e832]: ƒ
+      - button "U+0193" [ref=e833] [cursor=pointer]:
+        - generic [ref=e834]: Ɠ
+      - button "U+0194" [ref=e835] [cursor=pointer]:
+        - generic [ref=e836]: Ɣ
+      - button "U+0195" [ref=e837] [cursor=pointer]:
+        - generic [ref=e838]: ƕ
+      - button "U+0196" [ref=e839] [cursor=pointer]:
+        - generic [ref=e840]: Ɩ
+      - button "U+0197" [ref=e841] [cursor=pointer]:
+        - generic [ref=e842]: Ɨ
+      - button "U+0198" [ref=e843] [cursor=pointer]:
+        - generic [ref=e844]: Ƙ
+      - button "U+0199" [ref=e845] [cursor=pointer]:
+        - generic [ref=e846]: ƙ
+      - button "U+019A" [ref=e847] [cursor=pointer]:
+        - generic [ref=e848]: ƚ
+      - button "U+019B" [ref=e849] [cursor=pointer]:
+        - generic [ref=e850]: ƛ
+      - button "U+019C" [ref=e851] [cursor=pointer]:
+        - generic [ref=e852]: Ɯ
+      - button "U+019D" [ref=e853] [cursor=pointer]:
+        - generic [ref=e854]: Ɲ
+      - button "U+019E" [ref=e855] [cursor=pointer]:
+        - generic [ref=e856]: ƞ
+      - button "U+019F" [ref=e857] [cursor=pointer]:
+        - generic [ref=e858]: Ɵ
+      - button "U+01A0" [ref=e859] [cursor=pointer]:
+        - generic [ref=e860]: Ơ
+      - button "U+01A1" [ref=e861] [cursor=pointer]:
+        - generic [ref=e862]: ơ
+      - button "U+01A2" [ref=e863] [cursor=pointer]:
+        - generic [ref=e864]: Ƣ
+      - button "U+01A3" [ref=e865] [cursor=pointer]:
+        - generic [ref=e866]: ƣ
+      - button "U+01A4" [ref=e867] [cursor=pointer]:
+        - generic [ref=e868]: Ƥ
+      - button "U+01A5" [ref=e869] [cursor=pointer]:
+        - generic [ref=e870]: ƥ
+      - button "U+01A6" [ref=e871] [cursor=pointer]:
+        - generic [ref=e872]: Ʀ
+      - button "U+01A7" [ref=e873] [cursor=pointer]:
+        - generic [ref=e874]: Ƨ
+      - button "U+01A8" [ref=e875] [cursor=pointer]:
+        - generic [ref=e876]: ƨ
+      - button "U+01A9" [ref=e877] [cursor=pointer]:
+        - generic [ref=e878]: Ʃ
+      - button "U+01AA" [ref=e879] [cursor=pointer]:
+        - generic [ref=e880]: ƪ
+      - button "U+01AB" [ref=e881] [cursor=pointer]:
+        - generic [ref=e882]: ƫ
+      - button "U+01AC" [ref=e883] [cursor=pointer]:
+        - generic [ref=e884]: Ƭ
+      - button "U+01AD" [ref=e885] [cursor=pointer]:
+        - generic [ref=e886]: ƭ
+      - button "U+01AE" [ref=e887] [cursor=pointer]:
+        - generic [ref=e888]: Ʈ
+      - button "U+01AF" [ref=e889] [cursor=pointer]:
+        - generic [ref=e890]: Ư
+      - button "U+01B0" [ref=e891] [cursor=pointer]:
+        - generic [ref=e892]: ư
+      - button "U+01B1" [ref=e893] [cursor=pointer]:
+        - generic [ref=e894]: Ʊ
+      - button "U+01B2" [ref=e895] [cursor=pointer]:
+        - generic [ref=e896]: Ʋ
+      - button "U+01B3" [ref=e897] [cursor=pointer]:
+        - generic [ref=e898]: Ƴ
+      - button "U+01B4" [ref=e899] [cursor=pointer]:
+        - generic [ref=e900]: ƴ
+      - button "U+01B5" [ref=e901] [cursor=pointer]:
+        - generic [ref=e902]: Ƶ
+      - button "U+01B6" [ref=e903] [cursor=pointer]:
+        - generic [ref=e904]: ƶ
+      - button "U+01B7" [ref=e905] [cursor=pointer]:
+        - generic [ref=e906]: Ʒ
+      - button "U+01B8" [ref=e907] [cursor=pointer]:
+        - generic [ref=e908]: Ƹ
+      - button "U+01B9" [ref=e909] [cursor=pointer]:
+        - generic [ref=e910]: ƹ
+      - button "U+01BA" [ref=e911] [cursor=pointer]:
+        - generic [ref=e912]: ƺ
+      - button "U+01BB" [ref=e913] [cursor=pointer]:
+        - generic [ref=e914]: ƻ
+      - button "U+01BC" [ref=e915] [cursor=pointer]:
+        - generic [ref=e916]: Ƽ
+      - button "U+01BD" [ref=e917] [cursor=pointer]:
+        - generic [ref=e918]: ƽ
+      - button "U+01BE" [ref=e919] [cursor=pointer]:
+        - generic [ref=e920]: ƾ
+      - button "U+01BF" [ref=e921] [cursor=pointer]:
+        - generic [ref=e922]: ƿ
+      - button "U+01C0" [ref=e923] [cursor=pointer]:
+        - generic [ref=e924]: ǀ
+      - button "U+01C1" [ref=e925] [cursor=pointer]:
+        - generic [ref=e926]: ǁ
+      - button "U+01C2" [ref=e927] [cursor=pointer]:
+        - generic [ref=e928]: ǂ
+      - button "U+01C3" [ref=e929] [cursor=pointer]:
+        - generic [ref=e930]: ǃ
+      - button "U+01C4" [ref=e931] [cursor=pointer]:
+        - generic [ref=e932]: Ǆ
+      - button "U+01C5" [ref=e933] [cursor=pointer]:
+        - generic [ref=e934]: ǅ
+      - button "U+01C6" [ref=e935] [cursor=pointer]:
+        - generic [ref=e936]: ǆ
+      - button "U+01C7" [ref=e937] [cursor=pointer]:
+        - generic [ref=e938]: Ǉ
+      - button "U+01C8" [ref=e939] [cursor=pointer]:
+        - generic [ref=e940]: ǈ
+      - button "U+01C9" [ref=e941] [cursor=pointer]:
+        - generic [ref=e942]: ǉ
+      - button "U+01CA" [ref=e943] [cursor=pointer]:
+        - generic [ref=e944]: Ǌ
+      - button "U+01CB" [ref=e945] [cursor=pointer]:
+        - generic [ref=e946]: ǋ
+      - button "U+01CC" [ref=e947] [cursor=pointer]:
+        - generic [ref=e948]: ǌ
+      - button "U+01CD" [ref=e949] [cursor=pointer]:
+        - generic [ref=e950]: Ǎ
+      - button "U+01CE" [ref=e951] [cursor=pointer]:
+        - generic [ref=e952]: ǎ
+      - button "U+01CF" [ref=e953] [cursor=pointer]:
+        - generic [ref=e954]: Ǐ
+      - button "U+01D0" [ref=e955] [cursor=pointer]:
+        - generic [ref=e956]: ǐ
+      - button "U+01D1" [ref=e957] [cursor=pointer]:
+        - generic [ref=e958]: Ǒ
+      - button "U+01D2" [ref=e959] [cursor=pointer]:
+        - generic [ref=e960]: ǒ
+      - button "U+01D3" [ref=e961] [cursor=pointer]:
+        - generic [ref=e962]: Ǔ
+      - button "U+01D4" [ref=e963] [cursor=pointer]:
+        - generic [ref=e964]: ǔ
+      - button "U+01D5" [ref=e965] [cursor=pointer]:
+        - generic [ref=e966]: Ǖ
+      - button "U+01D6" [ref=e967] [cursor=pointer]:
+        - generic [ref=e968]: ǖ
+      - button "U+01D7" [ref=e969] [cursor=pointer]:
+        - generic [ref=e970]: Ǘ
+      - button "U+01D8" [ref=e971] [cursor=pointer]:
+        - generic [ref=e972]: ǘ
+      - button "U+01D9" [ref=e973] [cursor=pointer]:
+        - generic [ref=e974]: Ǚ
+      - button "U+01DA" [ref=e975] [cursor=pointer]:
+        - generic [ref=e976]: ǚ
+      - button "U+01DB" [ref=e977] [cursor=pointer]:
+        - generic [ref=e978]: Ǜ
+      - button "U+01DC" [ref=e979] [cursor=pointer]:
+        - generic [ref=e980]: ǜ
+      - button "U+01DD" [ref=e981] [cursor=pointer]:
+        - generic [ref=e982]: ǝ
+      - button "U+01DE" [ref=e983] [cursor=pointer]:
+        - generic [ref=e984]: Ǟ
+      - button "U+01DF" [ref=e985] [cursor=pointer]:
+        - generic [ref=e986]: ǟ
+      - button "U+01E0" [ref=e987] [cursor=pointer]:
+        - generic [ref=e988]: Ǡ
+      - button "U+01E1" [ref=e989] [cursor=pointer]:
+        - generic [ref=e990]: ǡ
+      - button "U+01E2" [ref=e991] [cursor=pointer]:
+        - generic [ref=e992]: Ǣ
+      - button "U+01E3" [ref=e993] [cursor=pointer]:
+        - generic [ref=e994]: ǣ
+      - button "U+01E4" [ref=e995] [cursor=pointer]:
+        - generic [ref=e996]: Ǥ
+      - button "U+01E5" [ref=e997] [cursor=pointer]:
+        - generic [ref=e998]: ǥ
+      - button "U+01E6" [ref=e999] [cursor=pointer]:
+        - generic [ref=e1000]: Ǧ
+      - button "U+01E7" [ref=e1001] [cursor=pointer]:
+        - generic [ref=e1002]: ǧ
+      - button "U+01E8" [ref=e1003] [cursor=pointer]:
+        - generic [ref=e1004]: Ǩ
+      - button "U+01E9" [ref=e1005] [cursor=pointer]:
+        - generic [ref=e1006]: ǩ
+      - button "U+01EA" [ref=e1007] [cursor=pointer]:
+        - generic [ref=e1008]: Ǫ
+      - button "U+01EB" [ref=e1009] [cursor=pointer]:
+        - generic [ref=e1010]: ǫ
+      - button "U+01EC" [ref=e1011] [cursor=pointer]:
+        - generic [ref=e1012]: Ǭ
+      - button "U+01ED" [ref=e1013] [cursor=pointer]:
+        - generic [ref=e1014]: ǭ
+      - button "U+01EE" [ref=e1015] [cursor=pointer]:
+        - generic [ref=e1016]: Ǯ
+      - button "U+01EF" [ref=e1017] [cursor=pointer]:
+        - generic [ref=e1018]: ǯ
+      - button "U+01F0" [ref=e1019] [cursor=pointer]:
+        - generic [ref=e1020]: ǰ
+      - button "U+01F1" [ref=e1021] [cursor=pointer]:
+        - generic [ref=e1022]: Ǳ
+      - button "U+01F2" [ref=e1023] [cursor=pointer]:
+        - generic [ref=e1024]: ǲ
+      - button "U+01F3" [ref=e1025] [cursor=pointer]:
+        - generic [ref=e1026]: ǳ
+      - button "U+01F4" [ref=e1027] [cursor=pointer]:
+        - generic [ref=e1028]: Ǵ
+      - button "U+01F5" [ref=e1029] [cursor=pointer]:
+        - generic [ref=e1030]: ǵ
+      - button "U+01F6" [ref=e1031] [cursor=pointer]:
+        - generic [ref=e1032]: Ƕ
+      - button "U+01F7" [ref=e1033] [cursor=pointer]:
+        - generic [ref=e1034]: Ƿ
+      - button "U+01F8" [ref=e1035] [cursor=pointer]:
+        - generic [ref=e1036]: Ǹ
+      - button "U+01F9" [ref=e1037] [cursor=pointer]:
+        - generic [ref=e1038]: ǹ
+      - button "U+01FA" [ref=e1039] [cursor=pointer]:
+        - generic [ref=e1040]: Ǻ
+      - button "U+01FB" [ref=e1041] [cursor=pointer]:
+        - generic [ref=e1042]: ǻ
+      - button "U+01FC" [ref=e1043] [cursor=pointer]:
+        - generic [ref=e1044]: Ǽ
+      - button "U+01FD" [ref=e1045] [cursor=pointer]:
+        - generic [ref=e1046]: ǽ
+      - button "U+01FE" [ref=e1047] [cursor=pointer]:
+        - generic [ref=e1048]: Ǿ
+      - button "U+01FF" [ref=e1049] [cursor=pointer]:
+        - generic [ref=e1050]: ǿ
+      - button "U+0200" [ref=e1051] [cursor=pointer]:
+        - generic [ref=e1052]: Ȁ
+      - button "U+0201" [ref=e1053] [cursor=pointer]:
+        - generic [ref=e1054]: ȁ
+      - button "U+0202" [ref=e1055] [cursor=pointer]:
+        - generic [ref=e1056]: Ȃ
+      - button "U+0203" [ref=e1057] [cursor=pointer]:
+        - generic [ref=e1058]: ȃ
+      - button "U+0204" [ref=e1059] [cursor=pointer]:
+        - generic [ref=e1060]: Ȅ
+      - button "U+0205" [ref=e1061] [cursor=pointer]:
+        - generic [ref=e1062]: ȅ
+      - button "U+0206" [ref=e1063] [cursor=pointer]:
+        - generic [ref=e1064]: Ȇ
+      - button "U+0207" [ref=e1065] [cursor=pointer]:
+        - generic [ref=e1066]: ȇ
+      - button "U+0208" [ref=e1067] [cursor=pointer]:
+        - generic [ref=e1068]: Ȉ
+      - button "U+0209" [ref=e1069] [cursor=pointer]:
+        - generic [ref=e1070]: ȉ
+      - button "U+020A" [ref=e1071] [cursor=pointer]:
+        - generic [ref=e1072]: Ȋ
+      - button "U+020B" [ref=e1073] [cursor=pointer]:
+        - generic [ref=e1074]: ȋ
+      - button "U+020C" [ref=e1075] [cursor=pointer]:
+        - generic [ref=e1076]: Ȍ
+      - button "U+020D" [ref=e1077] [cursor=pointer]:
+        - generic [ref=e1078]: ȍ
+      - button "U+020E" [ref=e1079] [cursor=pointer]:
+        - generic [ref=e1080]: Ȏ
+      - button "U+020F" [ref=e1081] [cursor=pointer]:
+        - generic [ref=e1082]: ȏ
+      - button "U+0210" [ref=e1083] [cursor=pointer]:
+        - generic [ref=e1084]: Ȑ
+      - button "U+0211" [ref=e1085] [cursor=pointer]:
+        - generic [ref=e1086]: ȑ
+      - button "U+0212" [ref=e1087] [cursor=pointer]:
+        - generic [ref=e1088]: Ȓ
+      - button "U+0213" [ref=e1089] [cursor=pointer]:
+        - generic [ref=e1090]: ȓ
+      - button "U+0214" [ref=e1091] [cursor=pointer]:
+        - generic [ref=e1092]: Ȕ
+      - button "U+0215" [ref=e1093] [cursor=pointer]:
+        - generic [ref=e1094]: ȕ
+      - button "U+0216" [ref=e1095] [cursor=pointer]:
+        - generic [ref=e1096]: Ȗ
+      - button "U+0217" [ref=e1097] [cursor=pointer]:
+        - generic [ref=e1098]: ȗ
+      - button "U+0218" [ref=e1099] [cursor=pointer]:
+        - generic [ref=e1100]: Ș
+      - button "U+0219" [ref=e1101] [cursor=pointer]:
+        - generic [ref=e1102]: ș
+      - button "U+021A" [ref=e1103] [cursor=pointer]:
+        - generic [ref=e1104]: Ț
+      - button "U+021B" [ref=e1105] [cursor=pointer]:
+        - generic [ref=e1106]: ț
+      - button "U+021C" [ref=e1107] [cursor=pointer]:
+        - generic [ref=e1108]: Ȝ
+      - button "U+021D" [ref=e1109] [cursor=pointer]:
+        - generic [ref=e1110]: ȝ
+      - button "U+021E" [ref=e1111] [cursor=pointer]:
+        - generic [ref=e1112]: Ȟ
+      - button "U+021F" [ref=e1113] [cursor=pointer]:
+        - generic [ref=e1114]: ȟ
+      - button "U+0220" [ref=e1115] [cursor=pointer]:
+        - generic [ref=e1116]: Ƞ
+      - button "U+0221" [ref=e1117] [cursor=pointer]:
+        - generic [ref=e1118]: ȡ
+      - button "U+0222" [ref=e1119] [cursor=pointer]:
+        - generic [ref=e1120]: Ȣ
+      - button "U+0223" [ref=e1121] [cursor=pointer]:
+        - generic [ref=e1122]: ȣ
+      - button "U+0224" [ref=e1123] [cursor=pointer]:
+        - generic [ref=e1124]: Ȥ
+      - button "U+0225" [ref=e1125] [cursor=pointer]:
+        - generic [ref=e1126]: ȥ
+      - button "U+0226" [ref=e1127] [cursor=pointer]:
+        - generic [ref=e1128]: Ȧ
+      - button "U+0227" [ref=e1129] [cursor=pointer]:
+        - generic [ref=e1130]: ȧ
+      - button "U+0228" [ref=e1131] [cursor=pointer]:
+        - generic [ref=e1132]: Ȩ
+      - button "U+0229" [ref=e1133] [cursor=pointer]:
+        - generic [ref=e1134]: ȩ
+      - button "U+022A" [ref=e1135] [cursor=pointer]:
+        - generic [ref=e1136]: Ȫ
+      - button "U+022B" [ref=e1137] [cursor=pointer]:
+        - generic [ref=e1138]: ȫ
+      - button "U+022C" [ref=e1139] [cursor=pointer]:
+        - generic [ref=e1140]: Ȭ
+      - button "U+022D" [ref=e1141] [cursor=pointer]:
+        - generic [ref=e1142]: ȭ
+      - button "U+022E" [ref=e1143] [cursor=pointer]:
+        - generic [ref=e1144]: Ȯ
+      - button "U+022F" [ref=e1145] [cursor=pointer]:
+        - generic [ref=e1146]: ȯ
+      - button "U+0230" [ref=e1147] [cursor=pointer]:
+        - generic [ref=e1148]: Ȱ
+      - button "U+0231" [ref=e1149] [cursor=pointer]:
+        - generic [ref=e1150]: ȱ
+      - button "U+0232" [ref=e1151] [cursor=pointer]:
+        - generic [ref=e1152]: Ȳ
+      - button "U+0233" [ref=e1153] [cursor=pointer]:
+        - generic [ref=e1154]: ȳ
+      - button "U+0234" [ref=e1155] [cursor=pointer]:
+        - generic [ref=e1156]: ȴ
+      - button "U+0235" [ref=e1157] [cursor=pointer]:
+        - generic [ref=e1158]: ȵ
+      - button "U+0236" [ref=e1159] [cursor=pointer]:
+        - generic [ref=e1160]: ȶ
+      - button "U+0237" [ref=e1161] [cursor=pointer]:
+        - generic [ref=e1162]: ȷ
+      - button "U+0238" [ref=e1163] [cursor=pointer]:
+        - generic [ref=e1164]: ȸ
+      - button "U+0239" [ref=e1165] [cursor=pointer]:
+        - generic [ref=e1166]: ȹ
+      - button "U+023A" [ref=e1167] [cursor=pointer]:
+        - generic [ref=e1168]: Ⱥ
+      - button "U+023B" [ref=e1169] [cursor=pointer]:
+        - generic [ref=e1170]: Ȼ
+      - button "U+023C" [ref=e1171] [cursor=pointer]:
+        - generic [ref=e1172]: ȼ
+      - button "U+023D" [ref=e1173] [cursor=pointer]:
+        - generic [ref=e1174]: Ƚ
+      - button "U+023E" [ref=e1175] [cursor=pointer]:
+        - generic [ref=e1176]: Ⱦ
+      - button "U+023F" [ref=e1177] [cursor=pointer]:
+        - generic [ref=e1178]: ȿ
+      - button "U+0240" [ref=e1179] [cursor=pointer]:
+        - generic [ref=e1180]: ɀ
+      - button "U+0241" [ref=e1181] [cursor=pointer]:
+        - generic [ref=e1182]: Ɂ
+      - button "U+0242" [ref=e1183] [cursor=pointer]:
+        - generic [ref=e1184]: ɂ
+      - button "U+0243" [ref=e1185] [cursor=pointer]:
+        - generic [ref=e1186]: Ƀ
+      - button "U+0244" [ref=e1187] [cursor=pointer]:
+        - generic [ref=e1188]: Ʉ
+      - button "U+0245" [ref=e1189] [cursor=pointer]:
+        - generic [ref=e1190]: Ʌ
+      - button "U+0246" [ref=e1191] [cursor=pointer]:
+        - generic [ref=e1192]: Ɇ
+      - button "U+0247" [ref=e1193] [cursor=pointer]:
+        - generic [ref=e1194]: ɇ
+      - button "U+0248" [ref=e1195] [cursor=pointer]:
+        - generic [ref=e1196]: Ɉ
+      - button "U+0249" [ref=e1197] [cursor=pointer]:
+        - generic [ref=e1198]: ɉ
+      - button "U+024A" [ref=e1199] [cursor=pointer]:
+        - generic [ref=e1200]: Ɋ
+      - button "U+024B" [ref=e1201] [cursor=pointer]:
+        - generic [ref=e1202]: ɋ
+      - button "U+024C" [ref=e1203] [cursor=pointer]:
+        - generic [ref=e1204]: Ɍ
+      - button "U+024D" [ref=e1205] [cursor=pointer]:
+        - generic [ref=e1206]: ɍ
+      - button "U+024E" [ref=e1207] [cursor=pointer]:
+        - generic [ref=e1208]: Ɏ
+      - button "U+024F" [ref=e1209] [cursor=pointer]:
+        - generic [ref=e1210]: ɏ
+      - button "U+0250" [ref=e1211] [cursor=pointer]:
+        - generic [ref=e1212]: ɐ
+      - button "U+0251" [ref=e1213] [cursor=pointer]:
+        - generic [ref=e1214]: ɑ
+      - button "U+0252" [ref=e1215] [cursor=pointer]:
+        - generic [ref=e1216]: ɒ
+      - button "U+0253" [ref=e1217] [cursor=pointer]:
+        - generic [ref=e1218]: ɓ
+      - button "U+0254" [ref=e1219] [cursor=pointer]:
+        - generic [ref=e1220]: ɔ
+      - button "U+0255" [ref=e1221] [cursor=pointer]:
+        - generic [ref=e1222]: ɕ
+      - button "U+0256" [ref=e1223] [cursor=pointer]:
+        - generic [ref=e1224]: ɖ
+      - button "U+0257" [ref=e1225] [cursor=pointer]:
+        - generic [ref=e1226]: ɗ
+      - button "U+0258" [ref=e1227] [cursor=pointer]:
+        - generic [ref=e1228]: ɘ
+      - button "U+0259" [ref=e1229] [cursor=pointer]:
+        - generic [ref=e1230]: ə
+      - button "U+025A" [ref=e1231] [cursor=pointer]:
+        - generic [ref=e1232]: ɚ
+      - button "U+025B" [ref=e1233] [cursor=pointer]:
+        - generic [ref=e1234]: ɛ
+      - button "U+025C" [ref=e1235] [cursor=pointer]:
+        - generic [ref=e1236]: ɜ
+      - button "U+025D" [ref=e1237] [cursor=pointer]:
+        - generic [ref=e1238]: ɝ
+      - button "U+025E" [ref=e1239] [cursor=pointer]:
+        - generic [ref=e1240]: ɞ
+      - button "U+025F" [ref=e1241] [cursor=pointer]:
+        - generic [ref=e1242]: ɟ
+      - button "U+0260" [ref=e1243] [cursor=pointer]:
+        - generic [ref=e1244]: ɠ
+      - button "U+0261" [ref=e1245] [cursor=pointer]:
+        - generic [ref=e1246]: ɡ
+      - button "U+0262" [ref=e1247] [cursor=pointer]:
+        - generic [ref=e1248]: ɢ
+      - button "U+0263" [ref=e1249] [cursor=pointer]:
+        - generic [ref=e1250]: ɣ
+      - button "U+0264" [ref=e1251] [cursor=pointer]:
+        - generic [ref=e1252]: ɤ
+      - button "U+0265" [ref=e1253] [cursor=pointer]:
+        - generic [ref=e1254]: ɥ
+      - button "U+0266" [ref=e1255] [cursor=pointer]:
+        - generic [ref=e1256]: ɦ
+      - button "U+0267" [ref=e1257] [cursor=pointer]:
+        - generic [ref=e1258]: ɧ
+      - button "U+0268" [ref=e1259] [cursor=pointer]:
+        - generic [ref=e1260]: ɨ
+      - button "U+0269" [ref=e1261] [cursor=pointer]:
+        - generic [ref=e1262]: ɩ
+      - button "U+026A" [ref=e1263] [cursor=pointer]:
+        - generic [ref=e1264]: ɪ
+      - button "U+026B" [ref=e1265] [cursor=pointer]:
+        - generic [ref=e1266]: ɫ
+      - button "U+026C" [ref=e1267] [cursor=pointer]:
+        - generic [ref=e1268]: ɬ
+      - button "U+026D" [ref=e1269] [cursor=pointer]:
+        - generic [ref=e1270]: ɭ
+      - button "U+026E" [ref=e1271] [cursor=pointer]:
+        - generic [ref=e1272]: ɮ
+      - button "U+026F" [ref=e1273] [cursor=pointer]:
+        - generic [ref=e1274]: ɯ
+      - button "U+0270" [ref=e1275] [cursor=pointer]:
+        - generic [ref=e1276]: ɰ
+      - button "U+0271" [ref=e1277] [cursor=pointer]:
+        - generic [ref=e1278]: ɱ
+      - button "U+0272" [ref=e1279] [cursor=pointer]:
+        - generic [ref=e1280]: ɲ
+      - button "U+0273" [ref=e1281] [cursor=pointer]:
+        - generic [ref=e1282]: ɳ
+      - button "U+0274" [ref=e1283] [cursor=pointer]:
+        - generic [ref=e1284]: ɴ
+      - button "U+0275" [ref=e1285] [cursor=pointer]:
+        - generic [ref=e1286]: ɵ
+      - button "U+0276" [ref=e1287] [cursor=pointer]:
+        - generic [ref=e1288]: ɶ
+      - button "U+0277" [ref=e1289] [cursor=pointer]:
+        - generic [ref=e1290]: ɷ
+      - button "U+0278" [ref=e1291] [cursor=pointer]:
+        - generic [ref=e1292]: ɸ
+      - button "U+0279" [ref=e1293] [cursor=pointer]:
+        - generic [ref=e1294]: ɹ
+      - button "U+027A" [ref=e1295] [cursor=pointer]:
+        - generic [ref=e1296]: ɺ
+      - button "U+027B" [ref=e1297] [cursor=pointer]:
+        - generic [ref=e1298]: ɻ
+      - button "U+027C" [ref=e1299] [cursor=pointer]:
+        - generic [ref=e1300]: ɼ
+      - button "U+027D" [ref=e1301] [cursor=pointer]:
+        - generic [ref=e1302]: ɽ
+      - button "U+027E" [ref=e1303] [cursor=pointer]:
+        - generic [ref=e1304]: ɾ
+      - button "U+027F" [ref=e1305] [cursor=pointer]:
+        - generic [ref=e1306]: ɿ
+      - button "U+0280" [ref=e1307] [cursor=pointer]:
+        - generic [ref=e1308]: ʀ
+      - button "U+0281" [ref=e1309] [cursor=pointer]:
+        - generic [ref=e1310]: ʁ
+      - button "U+0282" [ref=e1311] [cursor=pointer]:
+        - generic [ref=e1312]: ʂ
+      - button "U+0283" [ref=e1313] [cursor=pointer]:
+        - generic [ref=e1314]: ʃ
+      - button "U+0284" [ref=e1315] [cursor=pointer]:
+        - generic [ref=e1316]: ʄ
+      - button "U+0285" [ref=e1317] [cursor=pointer]:
+        - generic [ref=e1318]: ʅ
+      - button "U+0286" [ref=e1319] [cursor=pointer]:
+        - generic [ref=e1320]: ʆ
+      - button "U+0287" [ref=e1321] [cursor=pointer]:
+        - generic [ref=e1322]: ʇ
+      - button "U+0288" [ref=e1323] [cursor=pointer]:
+        - generic [ref=e1324]: ʈ
+      - button "U+0289" [ref=e1325] [cursor=pointer]:
+        - generic [ref=e1326]: ʉ
+      - button "U+028A" [ref=e1327] [cursor=pointer]:
+        - generic [ref=e1328]: ʊ
+      - button "U+028B" [ref=e1329] [cursor=pointer]:
+        - generic [ref=e1330]: ʋ
+      - button "U+028C" [ref=e1331] [cursor=pointer]:
+        - generic [ref=e1332]: ʌ
+      - button "U+028D" [ref=e1333] [cursor=pointer]:
+        - generic [ref=e1334]: ʍ
+      - button "U+028E" [ref=e1335] [cursor=pointer]:
+        - generic [ref=e1336]: ʎ
+      - button "U+028F" [ref=e1337] [cursor=pointer]:
+        - generic [ref=e1338]: ʏ
+      - button "U+0290" [ref=e1339] [cursor=pointer]:
+        - generic [ref=e1340]: ʐ
+      - button "U+0291" [ref=e1341] [cursor=pointer]:
+        - generic [ref=e1342]: ʑ
+      - button "U+0292" [ref=e1343] [cursor=pointer]:
+        - generic [ref=e1344]: ʒ
+      - button "U+0293" [ref=e1345] [cursor=pointer]:
+        - generic [ref=e1346]: ʓ
+      - button "U+0294" [ref=e1347] [cursor=pointer]:
+        - generic [ref=e1348]: ʔ
+      - button "U+0295" [ref=e1349] [cursor=pointer]:
+        - generic [ref=e1350]: ʕ
+      - button "U+0296" [ref=e1351] [cursor=pointer]:
+        - generic [ref=e1352]: ʖ
+      - button "U+0297" [ref=e1353] [cursor=pointer]:
+        - generic [ref=e1354]: ʗ
+      - button "U+0298" [ref=e1355] [cursor=pointer]:
+        - generic [ref=e1356]: ʘ
+      - button "U+0299" [ref=e1357] [cursor=pointer]:
+        - generic [ref=e1358]: ʙ
+      - button "U+029A" [ref=e1359] [cursor=pointer]:
+        - generic [ref=e1360]: ʚ
+      - button "U+029B" [ref=e1361] [cursor=pointer]:
+        - generic [ref=e1362]: ʛ
+      - button "U+029C" [ref=e1363] [cursor=pointer]:
+        - generic [ref=e1364]: ʜ
+      - button "U+029D" [ref=e1365] [cursor=pointer]:
+        - generic [ref=e1366]: ʝ
+      - button "U+029E" [ref=e1367] [cursor=pointer]:
+        - generic [ref=e1368]: ʞ
+      - button "U+029F" [ref=e1369] [cursor=pointer]:
+        - generic [ref=e1370]: ʟ
+      - button "U+02A0" [ref=e1371] [cursor=pointer]:
+        - generic [ref=e1372]: ʠ
+      - button "U+02A1" [ref=e1373] [cursor=pointer]:
+        - generic [ref=e1374]: ʡ
+      - button "U+02A2" [ref=e1375] [cursor=pointer]:
+        - generic [ref=e1376]: ʢ
+      - button "U+02A3" [ref=e1377] [cursor=pointer]:
+        - generic [ref=e1378]: ʣ
+      - button "U+02A4" [ref=e1379] [cursor=pointer]:
+        - generic [ref=e1380]: ʤ
+      - button "U+02A5" [ref=e1381] [cursor=pointer]:
+        - generic [ref=e1382]: ʥ
+      - button "U+02A6" [ref=e1383] [cursor=pointer]:
+        - generic [ref=e1384]: ʦ
+      - button "U+02A7" [ref=e1385] [cursor=pointer]:
+        - generic [ref=e1386]: ʧ
+      - button "U+02A8" [ref=e1387] [cursor=pointer]:
+        - generic [ref=e1388]: ʨ
+      - button "U+02A9" [ref=e1389] [cursor=pointer]:
+        - generic [ref=e1390]: ʩ
+      - button "U+02AA" [ref=e1391] [cursor=pointer]:
+        - generic [ref=e1392]: ʪ
+      - button "U+02AB" [ref=e1393] [cursor=pointer]:
+        - generic [ref=e1394]: ʫ
+      - button "U+02AC" [ref=e1395] [cursor=pointer]:
+        - generic [ref=e1396]: ʬ
+      - button "U+02AD" [ref=e1397] [cursor=pointer]:
+        - generic [ref=e1398]: ʭ
+      - button "U+02AE" [ref=e1399] [cursor=pointer]:
+        - generic [ref=e1400]: ʮ
+      - button "U+02AF" [ref=e1401] [cursor=pointer]:
+        - generic [ref=e1402]: ʯ
+      - button "U+02B0" [ref=e1403] [cursor=pointer]:
+        - generic [ref=e1404]: ʰ
+      - button "U+02B1" [ref=e1405] [cursor=pointer]:
+        - generic [ref=e1406]: ʱ
+      - button "U+02B2" [ref=e1407] [cursor=pointer]:
+        - generic [ref=e1408]: ʲ
+      - button "U+02B3" [ref=e1409] [cursor=pointer]:
+        - generic [ref=e1410]: ʳ
+      - button "U+02B4" [ref=e1411] [cursor=pointer]:
+        - generic [ref=e1412]: ʴ
+      - button "U+02B5" [ref=e1413] [cursor=pointer]:
+        - generic [ref=e1414]: ʵ
+      - button "U+02B6" [ref=e1415] [cursor=pointer]:
+        - generic [ref=e1416]: ʶ
+      - button "U+02B7" [ref=e1417] [cursor=pointer]:
+        - generic [ref=e1418]: ʷ
+      - button "U+02B8" [ref=e1419] [cursor=pointer]:
+        - generic [ref=e1420]: ʸ
+      - button "U+02B9" [ref=e1421] [cursor=pointer]:
+        - generic [ref=e1422]: ʹ
+      - button "U+02BA" [ref=e1423] [cursor=pointer]:
+        - generic [ref=e1424]: ʺ
+      - button "U+02BB" [ref=e1425] [cursor=pointer]:
+        - generic [ref=e1426]: ʻ
+      - button "U+02BC" [ref=e1427] [cursor=pointer]:
+        - generic [ref=e1428]: ʼ
+      - button "U+02BD" [ref=e1429] [cursor=pointer]:
+        - generic [ref=e1430]: ʽ
+      - button "U+02BE" [ref=e1431] [cursor=pointer]:
+        - generic [ref=e1432]: ʾ
+      - button "U+02BF" [ref=e1433] [cursor=pointer]:
+        - generic [ref=e1434]: ʿ
+      - button "U+02C0" [ref=e1435] [cursor=pointer]:
+        - generic [ref=e1436]: ˀ
+      - button "U+02C1" [ref=e1437] [cursor=pointer]:
+        - generic [ref=e1438]: ˁ
+      - button "U+02C2" [ref=e1439] [cursor=pointer]:
+        - generic [ref=e1440]: ˂
+      - button "U+02C3" [ref=e1441] [cursor=pointer]:
+        - generic [ref=e1442]: ˃
+      - button "U+02C4" [ref=e1443] [cursor=pointer]:
+        - generic [ref=e1444]: ˄
+      - button "U+02C5" [ref=e1445] [cursor=pointer]:
+        - generic [ref=e1446]: ˅
+      - button "U+02C6" [ref=e1447] [cursor=pointer]:
+        - generic [ref=e1448]: ˆ
+      - button "U+02C7" [ref=e1449] [cursor=pointer]:
+        - generic [ref=e1450]: ˇ
+      - button "U+02C8" [ref=e1451] [cursor=pointer]:
+        - generic [ref=e1452]: ˈ
+      - button "U+02C9" [ref=e1453] [cursor=pointer]:
+        - generic [ref=e1454]: ˉ
+      - button "U+02CA" [ref=e1455] [cursor=pointer]:
+        - generic [ref=e1456]: ˊ
+      - button "U+02CB" [ref=e1457] [cursor=pointer]:
+        - generic [ref=e1458]: ˋ
+      - button "U+02CC" [ref=e1459] [cursor=pointer]:
+        - generic [ref=e1460]: ˌ
+      - button "U+02CD" [ref=e1461] [cursor=pointer]:
+        - generic [ref=e1462]: ˍ
+      - button "U+02CE" [ref=e1463] [cursor=pointer]:
+        - generic [ref=e1464]: ˎ
+      - button "U+02CF" [ref=e1465] [cursor=pointer]:
+        - generic [ref=e1466]: ˏ
+      - button "U+02D0" [ref=e1467] [cursor=pointer]:
+        - generic [ref=e1468]: ː
+      - button "U+02D1" [ref=e1469] [cursor=pointer]:
+        - generic [ref=e1470]: ˑ
+      - button "U+02D2" [ref=e1471] [cursor=pointer]:
+        - generic [ref=e1472]: ˒
+      - button "U+02D3" [ref=e1473] [cursor=pointer]:
+        - generic [ref=e1474]: ˓
+      - button "U+02D4" [ref=e1475] [cursor=pointer]:
+        - generic [ref=e1476]: ˔
+      - button "U+02D5" [ref=e1477] [cursor=pointer]:
+        - generic [ref=e1478]: ˕
+      - button "U+02D6" [ref=e1479] [cursor=pointer]:
+        - generic [ref=e1480]: ˖
+      - button "U+02D7" [ref=e1481] [cursor=pointer]:
+        - generic [ref=e1482]: ˗
+      - button "U+02D8" [ref=e1483] [cursor=pointer]:
+        - generic [ref=e1484]: ˘
+      - button "U+02D9" [ref=e1485] [cursor=pointer]:
+        - generic [ref=e1486]: ˙
+      - button "U+02DA" [ref=e1487] [cursor=pointer]:
+        - generic [ref=e1488]: ˚
+      - button "U+02DB" [ref=e1489] [cursor=pointer]:
+        - generic [ref=e1490]: ˛
+      - button "U+02DC" [ref=e1491] [cursor=pointer]:
+        - generic [ref=e1492]: ˜
+      - button "U+02DD" [ref=e1493] [cursor=pointer]:
+        - generic [ref=e1494]: ˝
+      - button "U+02DE" [ref=e1495] [cursor=pointer]:
+        - generic [ref=e1496]: ˞
+      - button "U+02DF" [ref=e1497] [cursor=pointer]:
+        - generic [ref=e1498]: ˟
+      - button "U+02E0" [ref=e1499] [cursor=pointer]:
+        - generic [ref=e1500]: ˠ
+      - button "U+02E1" [ref=e1501] [cursor=pointer]:
+        - generic [ref=e1502]: ˡ
+      - button "U+02E2" [ref=e1503] [cursor=pointer]:
+        - generic [ref=e1504]: ˢ
+      - button "U+02E3" [ref=e1505] [cursor=pointer]:
+        - generic [ref=e1506]: ˣ
+      - button "U+02E4" [ref=e1507] [cursor=pointer]:
+        - generic [ref=e1508]: ˤ
+      - button "U+02E5" [ref=e1509] [cursor=pointer]:
+        - generic [ref=e1510]: ˥
+      - button "U+02E6" [ref=e1511] [cursor=pointer]:
+        - generic [ref=e1512]: ˦
+      - button "U+02E7" [ref=e1513] [cursor=pointer]:
+        - generic [ref=e1514]: ˧
+      - button "U+02E8" [ref=e1515] [cursor=pointer]:
+        - generic [ref=e1516]: ˨
+      - button "U+02E9" [ref=e1517] [cursor=pointer]:
+        - generic [ref=e1518]: ˩
+      - button "U+02EA" [ref=e1519] [cursor=pointer]:
+        - generic [ref=e1520]: ˪
+      - button "U+02EB" [ref=e1521] [cursor=pointer]:
+        - generic [ref=e1522]: ˫
+      - button "U+02EC" [ref=e1523] [cursor=pointer]:
+        - generic [ref=e1524]: ˬ
+      - button "U+02ED" [ref=e1525] [cursor=pointer]:
+        - generic [ref=e1526]: ˭
+      - button "U+02EE" [ref=e1527] [cursor=pointer]:
+        - generic [ref=e1528]: ˮ
+      - button "U+02EF" [ref=e1529] [cursor=pointer]:
+        - generic [ref=e1530]: ˯
+      - button "U+02F0" [ref=e1531] [cursor=pointer]:
+        - generic [ref=e1532]: ˰
+      - button "U+02F1" [ref=e1533] [cursor=pointer]:
+        - generic [ref=e1534]: ˱
+      - button "U+02F2" [ref=e1535] [cursor=pointer]:
+        - generic [ref=e1536]: ˲
+      - button "U+02F3" [ref=e1537] [cursor=pointer]:
+        - generic [ref=e1538]: ˳
+      - button "U+02F4" [ref=e1539] [cursor=pointer]:
+        - generic [ref=e1540]: ˴
+      - button "U+02F5" [ref=e1541] [cursor=pointer]:
+        - generic [ref=e1542]: ˵
+      - button "U+02F6" [ref=e1543] [cursor=pointer]:
+        - generic [ref=e1544]: ˶
+      - button "U+02F7" [ref=e1545] [cursor=pointer]:
+        - generic [ref=e1546]: ˷
+      - button "U+02F8" [ref=e1547] [cursor=pointer]:
+        - generic [ref=e1548]: ˸
+      - button "U+02F9" [ref=e1549] [cursor=pointer]:
+        - generic [ref=e1550]: ˹
+      - button "U+02FA" [ref=e1551] [cursor=pointer]:
+        - generic [ref=e1552]: ˺
+      - button "U+02FB" [ref=e1553] [cursor=pointer]:
+        - generic [ref=e1554]: ˻
+      - button "U+02FC" [ref=e1555] [cursor=pointer]:
+        - generic [ref=e1556]: ˼
+      - button "U+02FD" [ref=e1557] [cursor=pointer]:
+        - generic [ref=e1558]: ˽
+      - button "U+02FE" [ref=e1559] [cursor=pointer]:
+        - generic [ref=e1560]: ˾
+      - button "U+02FF" [ref=e1561] [cursor=pointer]:
+        - generic [ref=e1562]: ˿
+      - button "U+0300" [ref=e1563] [cursor=pointer]:
+        - generic: ̀
+      - button "U+0301" [ref=e1564] [cursor=pointer]:
+        - generic: ́
+      - button "U+0302" [ref=e1565] [cursor=pointer]:
+        - generic: ̂
+      - button "U+0303" [ref=e1566] [cursor=pointer]:
+        - generic: ̃
+      - button "U+0304" [ref=e1567] [cursor=pointer]:
+        - generic: ̄
+      - button "U+0305" [ref=e1568] [cursor=pointer]:
+        - generic: ̅
+      - button "U+0306" [ref=e1569] [cursor=pointer]:
+        - generic: ̆
+      - button "U+0307" [ref=e1570] [cursor=pointer]:
+        - generic: ̇
+      - button "U+0308" [ref=e1571] [cursor=pointer]:
+        - generic: ̈
+      - button "U+0309" [ref=e1572] [cursor=pointer]:
+        - generic: ̉
+      - button "U+030A" [ref=e1573] [cursor=pointer]:
+        - generic: ̊
+      - button "U+030B" [ref=e1574] [cursor=pointer]:
+        - generic: ̋
+      - button "U+030C" [ref=e1575] [cursor=pointer]:
+        - generic: ̌
+      - button "U+030D" [ref=e1576] [cursor=pointer]:
+        - generic: ̍
+      - button "U+030E" [ref=e1577] [cursor=pointer]:
+        - generic: ̎
+      - button "U+030F" [ref=e1578] [cursor=pointer]:
+        - generic: ̏
+      - button "U+0310" [ref=e1579] [cursor=pointer]:
+        - generic: ̐
+      - button "U+0311" [ref=e1580] [cursor=pointer]:
+        - generic: ̑
+      - button "U+0312" [ref=e1581] [cursor=pointer]:
+        - generic: ̒
+      - button "U+0313" [ref=e1582] [cursor=pointer]:
+        - generic: ̓
+      - button "U+0314" [ref=e1583] [cursor=pointer]:
+        - generic: ̔
+      - button "U+0315" [ref=e1584] [cursor=pointer]:
+        - generic: ̕
+      - button "U+0316" [ref=e1585] [cursor=pointer]:
+        - generic: ̖
+      - button "U+0317" [ref=e1586] [cursor=pointer]:
+        - generic: ̗
+      - button "U+0318" [ref=e1587] [cursor=pointer]:
+        - generic: ̘
+      - button "U+0319" [ref=e1588] [cursor=pointer]:
+        - generic: ̙
+      - button "U+031A" [ref=e1589] [cursor=pointer]:
+        - generic: ̚
+      - button "U+031B" [ref=e1590] [cursor=pointer]:
+        - generic: ̛
+      - button "U+031C" [ref=e1591] [cursor=pointer]:
+        - generic: ̜
+      - button "U+031D" [ref=e1592] [cursor=pointer]:
+        - generic: ̝
+      - button "U+031E" [ref=e1593] [cursor=pointer]:
+        - generic: ̞
+      - button "U+031F" [ref=e1594] [cursor=pointer]:
+        - generic: ̟
+      - button "U+0320" [ref=e1595] [cursor=pointer]:
+        - generic: ̠
+      - button "U+0321" [ref=e1596] [cursor=pointer]:
+        - generic: ̡
+      - button "U+0322" [ref=e1597] [cursor=pointer]:
+        - generic: ̢
+      - button "U+0323" [ref=e1598] [cursor=pointer]:
+        - generic: ̣
+      - button "U+0324" [ref=e1599] [cursor=pointer]:
+        - generic: ̤
+      - button "U+0325" [ref=e1600] [cursor=pointer]:
+        - generic: ̥
+      - button "U+0326" [ref=e1601] [cursor=pointer]:
+        - generic: ̦
+      - button "U+0327" [ref=e1602] [cursor=pointer]:
+        - generic: ̧
+      - button "U+0328" [ref=e1603] [cursor=pointer]:
+        - generic: ̨
+      - button "U+0329" [ref=e1604] [cursor=pointer]:
+        - generic: ̩
+      - button "U+032A" [ref=e1605] [cursor=pointer]:
+        - generic: ̪
+      - button "U+032B" [ref=e1606] [cursor=pointer]:
+        - generic: ̫
+      - button "U+032C" [ref=e1607] [cursor=pointer]:
+        - generic: ̬
+      - button "U+032D" [ref=e1608] [cursor=pointer]:
+        - generic: ̭
+      - button "U+032E" [ref=e1609] [cursor=pointer]:
+        - generic: ̮
+      - button "U+032F" [ref=e1610] [cursor=pointer]:
+        - generic: ̯
+      - button "U+0330" [ref=e1611] [cursor=pointer]:
+        - generic: ̰
+      - button "U+0331" [ref=e1612] [cursor=pointer]:
+        - generic: ̱
+      - button "U+0332" [ref=e1613] [cursor=pointer]:
+        - generic: ̲
+      - button "U+0333" [ref=e1614] [cursor=pointer]:
+        - generic: ̳
+      - button "U+0334" [ref=e1615] [cursor=pointer]:
+        - generic: ̴
+      - button "U+0335" [ref=e1616] [cursor=pointer]:
+        - generic: ̵
+      - button "U+0336" [ref=e1617] [cursor=pointer]:
+        - generic: ̶
+      - button "U+0337" [ref=e1618] [cursor=pointer]:
+        - generic: ̷
+      - button "U+0338" [ref=e1619] [cursor=pointer]:
+        - generic: ̸
+      - button "U+0339" [ref=e1620] [cursor=pointer]:
+        - generic: ̹
+      - button "U+033A" [ref=e1621] [cursor=pointer]:
+        - generic: ̺
+      - button "U+033B" [ref=e1622] [cursor=pointer]:
+        - generic: ̻
+      - button "U+033C" [ref=e1623] [cursor=pointer]:
+        - generic: ̼
+      - button "U+033D" [ref=e1624] [cursor=pointer]:
+        - generic: ̽
+      - button "U+033E" [ref=e1625] [cursor=pointer]:
+        - generic: ̾
+      - button "U+033F" [ref=e1626] [cursor=pointer]:
+        - generic: ̿
+      - button "U+0340" [ref=e1627] [cursor=pointer]:
+        - generic: ̀
+      - button "U+0341" [ref=e1628] [cursor=pointer]:
+        - generic: ́
+      - button "U+0342" [ref=e1629] [cursor=pointer]:
+        - generic: ͂
+      - button "U+0343" [ref=e1630] [cursor=pointer]:
+        - generic: ̓
+      - button "U+0344" [ref=e1631] [cursor=pointer]:
+        - generic: ̈́
+      - button "U+0345" [ref=e1632] [cursor=pointer]:
+        - generic: ͅ
+      - button "U+0346" [ref=e1633] [cursor=pointer]:
+        - generic: ͆
+      - button "U+0347" [ref=e1634] [cursor=pointer]:
+        - generic: ͇
+      - button "U+0348" [ref=e1635] [cursor=pointer]:
+        - generic: ͈
+      - button "U+0349" [ref=e1636] [cursor=pointer]:
+        - generic: ͉
+      - button "U+034A" [ref=e1637] [cursor=pointer]:
+        - generic: ͊
+      - button "U+034B" [ref=e1638] [cursor=pointer]:
+        - generic: ͋
+      - button "U+034C" [ref=e1639] [cursor=pointer]:
+        - generic: ͌
+      - button "U+034D" [ref=e1640] [cursor=pointer]:
+        - generic: ͍
+      - button "U+034E" [ref=e1641] [cursor=pointer]:
+        - generic: ͎
+      - button "U+034F" [ref=e1642] [cursor=pointer]:
+        - generic: ͏
+      - button "U+0350" [ref=e1643] [cursor=pointer]:
+        - generic: ͐
+      - button "U+0351" [ref=e1644] [cursor=pointer]:
+        - generic: ͑
+      - button "U+0352" [ref=e1645] [cursor=pointer]:
+        - generic: ͒
+      - button "U+0353" [ref=e1646] [cursor=pointer]:
+        - generic: ͓
+      - button "U+0354" [ref=e1647] [cursor=pointer]:
+        - generic: ͔
+      - button "U+0355" [ref=e1648] [cursor=pointer]:
+        - generic: ͕
+      - button "U+0356" [ref=e1649] [cursor=pointer]:
+        - generic: ͖
+      - button "U+0357" [ref=e1650] [cursor=pointer]:
+        - generic: ͗
+      - button "U+0358" [ref=e1651] [cursor=pointer]:
+        - generic: ͘
+      - button "U+0359" [ref=e1652] [cursor=pointer]:
+        - generic: ͙
+      - button "U+035A" [ref=e1653] [cursor=pointer]:
+        - generic: ͚
+      - button "U+035B" [ref=e1654] [cursor=pointer]:
+        - generic: ͛
+      - button "U+035C" [ref=e1655] [cursor=pointer]:
+        - generic: ͜
+      - button "U+035D" [ref=e1656] [cursor=pointer]:
+        - generic: ͝
+      - button "U+035E" [ref=e1657] [cursor=pointer]:
+        - generic: ͞
+      - button "U+035F" [ref=e1658] [cursor=pointer]:
+        - generic: ͟
+      - button "U+0360" [ref=e1659] [cursor=pointer]:
+        - generic: ͠
+      - button "U+0361" [ref=e1660] [cursor=pointer]:
+        - generic: ͡
+      - button "U+0362" [ref=e1661] [cursor=pointer]:
+        - generic: ͢
+      - button "U+0363" [ref=e1662] [cursor=pointer]:
+        - generic: ͣ
+      - button "U+0364" [ref=e1663] [cursor=pointer]:
+        - generic: ͤ
+      - button "U+0365" [ref=e1664] [cursor=pointer]:
+        - generic: ͥ
+      - button "U+0366" [ref=e1665] [cursor=pointer]:
+        - generic: ͦ
+      - button "U+0367" [ref=e1666] [cursor=pointer]:
+        - generic: ͧ
+      - button "U+0368" [ref=e1667] [cursor=pointer]:
+        - generic: ͨ
+      - button "U+0369" [ref=e1668] [cursor=pointer]:
+        - generic: ͩ
+      - button "U+036A" [ref=e1669] [cursor=pointer]:
+        - generic: ͪ
+      - button "U+036B" [ref=e1670] [cursor=pointer]:
+        - generic: ͫ
+      - button "U+036C" [ref=e1671] [cursor=pointer]:
+        - generic: ͬ
+      - button "U+036D" [ref=e1672] [cursor=pointer]:
+        - generic: ͭ
+      - button "U+036E" [ref=e1673] [cursor=pointer]:
+        - generic: ͮ
+      - button "U+036F" [ref=e1674] [cursor=pointer]:
+        - generic: ͯ
+      - button "U+0370" [ref=e1675] [cursor=pointer]:
+        - generic [ref=e1676]: Ͱ
+      - button "U+0371" [ref=e1677] [cursor=pointer]:
+        - generic [ref=e1678]: ͱ
+      - button "U+0372" [ref=e1679] [cursor=pointer]:
+        - generic [ref=e1680]: Ͳ
+      - button "U+0373" [ref=e1681] [cursor=pointer]:
+        - generic [ref=e1682]: ͳ
+      - button "U+0374" [ref=e1683] [cursor=pointer]:
+        - generic [ref=e1684]: ʹ
+      - button "U+0375" [ref=e1685] [cursor=pointer]:
+        - generic [ref=e1686]: ͵
+      - button "U+0376" [ref=e1687] [cursor=pointer]:
+        - generic [ref=e1688]: Ͷ
+      - button "U+0377" [ref=e1689] [cursor=pointer]:
+        - generic [ref=e1690]: ͷ
+      - button "U+0378" [ref=e1691] [cursor=pointer]:
+        - generic [ref=e1692]: ͸
+      - button "U+0379" [ref=e1693] [cursor=pointer]:
+        - generic [ref=e1694]: ͹
+      - button "U+037A" [ref=e1695] [cursor=pointer]:
+        - generic [ref=e1696]: ͺ
+      - button "U+037B" [ref=e1697] [cursor=pointer]:
+        - generic [ref=e1698]: ͻ
+      - button "U+037C" [ref=e1699] [cursor=pointer]:
+        - generic [ref=e1700]: ͼ
+      - button "U+037D" [ref=e1701] [cursor=pointer]:
+        - generic [ref=e1702]: ͽ
+      - button "U+037E" [ref=e1703] [cursor=pointer]:
+        - generic [ref=e1704]: ;
+      - button "U+037F" [ref=e1705] [cursor=pointer]:
+        - generic [ref=e1706]: Ϳ
+      - button "U+0380" [ref=e1707] [cursor=pointer]:
+        - generic [ref=e1708]: ΀
+      - button "U+0381" [ref=e1709] [cursor=pointer]:
+        - generic [ref=e1710]: ΁
+      - button "U+0382" [ref=e1711] [cursor=pointer]:
+        - generic [ref=e1712]: ΂
+      - button "U+0383" [ref=e1713] [cursor=pointer]:
+        - generic [ref=e1714]: ΃
+      - button "U+0384" [ref=e1715] [cursor=pointer]:
+        - generic [ref=e1716]: ΄
+      - button "U+0385" [ref=e1717] [cursor=pointer]:
+        - generic [ref=e1718]: ΅
+      - button "U+0386" [ref=e1719] [cursor=pointer]:
+        - generic [ref=e1720]: Ά
+      - button "U+0387" [ref=e1721] [cursor=pointer]:
+        - generic [ref=e1722]: ·
+      - button "U+0388" [ref=e1723] [cursor=pointer]:
+        - generic [ref=e1724]: Έ
+      - button "U+0389" [ref=e1725] [cursor=pointer]:
+        - generic [ref=e1726]: Ή
+      - button "U+038A" [ref=e1727] [cursor=pointer]:
+        - generic [ref=e1728]: Ί
+      - button "U+038B" [ref=e1729] [cursor=pointer]:
+        - generic [ref=e1730]: ΋
+      - button "U+038C" [ref=e1731] [cursor=pointer]:
+        - generic [ref=e1732]: Ό
+      - button "U+038D" [ref=e1733] [cursor=pointer]:
+        - generic [ref=e1734]: ΍
+      - button "U+038E" [ref=e1735] [cursor=pointer]:
+        - generic [ref=e1736]: Ύ
+      - button "U+038F" [ref=e1737] [cursor=pointer]:
+        - generic [ref=e1738]: Ώ
+      - button "U+0390" [ref=e1739] [cursor=pointer]:
+        - generic [ref=e1740]: ΐ
+      - button "U+0391" [ref=e1741] [cursor=pointer]:
+        - generic [ref=e1742]: Α
+      - button "U+0392" [ref=e1743] [cursor=pointer]:
+        - generic [ref=e1744]: Β
+      - button "U+0393" [ref=e1745] [cursor=pointer]:
+        - generic [ref=e1746]: Γ
+      - button "U+0394" [ref=e1747] [cursor=pointer]:
+        - generic [ref=e1748]: Δ
+      - button "U+0395" [ref=e1749] [cursor=pointer]:
+        - generic [ref=e1750]: Ε
+      - button "U+0396" [ref=e1751] [cursor=pointer]:
+        - generic [ref=e1752]: Ζ
+      - button "U+0397" [ref=e1753] [cursor=pointer]:
+        - generic [ref=e1754]: Η
+      - button "U+0398" [ref=e1755] [cursor=pointer]:
+        - generic [ref=e1756]: Θ
+      - button "U+0399" [ref=e1757] [cursor=pointer]:
+        - generic [ref=e1758]: Ι
+      - button "U+039A" [ref=e1759] [cursor=pointer]:
+        - generic [ref=e1760]: Κ
+      - button "U+039B" [ref=e1761] [cursor=pointer]:
+        - generic [ref=e1762]: Λ
+      - button "U+039C" [ref=e1763] [cursor=pointer]:
+        - generic [ref=e1764]: Μ
+      - button "U+039D" [ref=e1765] [cursor=pointer]:
+        - generic [ref=e1766]: Ν
+      - button "U+039E" [ref=e1767] [cursor=pointer]:
+        - generic [ref=e1768]: Ξ
+      - button "U+039F" [ref=e1769] [cursor=pointer]:
+        - generic [ref=e1770]: Ο
+      - button "U+03A0" [ref=e1771] [cursor=pointer]:
+        - generic [ref=e1772]: Π
+      - button "U+03A1" [ref=e1773] [cursor=pointer]:
+        - generic [ref=e1774]: Ρ
+      - button "U+03A2" [ref=e1775] [cursor=pointer]:
+        - generic [ref=e1776]: ΢
+      - button "U+03A3" [ref=e1777] [cursor=pointer]:
+        - generic [ref=e1778]: Σ
+      - button "U+03A4" [ref=e1779] [cursor=pointer]:
+        - generic [ref=e1780]: Τ
+      - button "U+03A5" [ref=e1781] [cursor=pointer]:
+        - generic [ref=e1782]: Υ
+      - button "U+03A6" [ref=e1783] [cursor=pointer]:
+        - generic [ref=e1784]: Φ
+      - button "U+03A7" [ref=e1785] [cursor=pointer]:
+        - generic [ref=e1786]: Χ
+      - button "U+03A8" [ref=e1787] [cursor=pointer]:
+        - generic [ref=e1788]: Ψ
+      - button "U+03A9" [ref=e1789] [cursor=pointer]:
+        - generic [ref=e1790]: Ω
+      - button "U+03AA" [ref=e1791] [cursor=pointer]:
+        - generic [ref=e1792]: Ϊ
+      - button "U+03AB" [ref=e1793] [cursor=pointer]:
+        - generic [ref=e1794]: Ϋ
+      - button "U+03AC" [ref=e1795] [cursor=pointer]:
+        - generic [ref=e1796]: ά
+      - button "U+03AD" [ref=e1797] [cursor=pointer]:
+        - generic [ref=e1798]: έ
+      - button "U+03AE" [ref=e1799] [cursor=pointer]:
+        - generic [ref=e1800]: ή
+      - button "U+03AF" [ref=e1801] [cursor=pointer]:
+        - generic [ref=e1802]: ί
+      - button "U+03B0" [ref=e1803] [cursor=pointer]:
+        - generic [ref=e1804]: ΰ
+      - button "U+03B1" [ref=e1805] [cursor=pointer]:
+        - generic [ref=e1806]: α
+      - button "U+03B2" [ref=e1807] [cursor=pointer]:
+        - generic [ref=e1808]: β
+      - button "U+03B3" [ref=e1809] [cursor=pointer]:
+        - generic [ref=e1810]: γ
+      - button "U+03B4" [ref=e1811] [cursor=pointer]:
+        - generic [ref=e1812]: δ
+      - button "U+03B5" [ref=e1813] [cursor=pointer]:
+        - generic [ref=e1814]: ε
+      - button "U+03B6" [ref=e1815] [cursor=pointer]:
+        - generic [ref=e1816]: ζ
+      - button "U+03B7" [ref=e1817] [cursor=pointer]:
+        - generic [ref=e1818]: η
+      - button "U+03B8" [ref=e1819] [cursor=pointer]:
+        - generic [ref=e1820]: θ
+      - button "U+03B9" [ref=e1821] [cursor=pointer]:
+        - generic [ref=e1822]: ι
+      - button "U+03BA" [ref=e1823] [cursor=pointer]:
+        - generic [ref=e1824]: κ
+      - button "U+03BB" [ref=e1825] [cursor=pointer]:
+        - generic [ref=e1826]: λ
+      - button "U+03BC" [ref=e1827] [cursor=pointer]:
+        - generic [ref=e1828]: μ
+      - button "U+03BD" [ref=e1829] [cursor=pointer]:
+        - generic [ref=e1830]: ν
+      - button "U+03BE" [ref=e1831] [cursor=pointer]:
+        - generic [ref=e1832]: ξ
+      - button "U+03BF" [ref=e1833] [cursor=pointer]:
+        - generic [ref=e1834]: ο
+      - button "U+03C0" [ref=e1835] [cursor=pointer]:
+        - generic [ref=e1836]: π
+      - button "U+03C1" [ref=e1837] [cursor=pointer]:
+        - generic [ref=e1838]: ρ
+      - button "U+03C2" [ref=e1839] [cursor=pointer]:
+        - generic [ref=e1840]: ς
+      - button "U+03C3" [ref=e1841] [cursor=pointer]:
+        - generic [ref=e1842]: σ
+      - button "U+03C4" [ref=e1843] [cursor=pointer]:
+        - generic [ref=e1844]: τ
+      - button "U+03C5" [ref=e1845] [cursor=pointer]:
+        - generic [ref=e1846]: υ
+      - button "U+03C6" [ref=e1847] [cursor=pointer]:
+        - generic [ref=e1848]: φ
+      - button "U+03C7" [ref=e1849] [cursor=pointer]:
+        - generic [ref=e1850]: χ
+      - button "U+03C8" [ref=e1851] [cursor=pointer]:
+        - generic [ref=e1852]: ψ
+      - button "U+03C9" [ref=e1853] [cursor=pointer]:
+        - generic [ref=e1854]: ω
+      - button "U+03CA" [ref=e1855] [cursor=pointer]:
+        - generic [ref=e1856]: ϊ
+      - button "U+03CB" [ref=e1857] [cursor=pointer]:
+        - generic [ref=e1858]: ϋ
+      - button "U+03CC" [ref=e1859] [cursor=pointer]:
+        - generic [ref=e1860]: ό
+      - button "U+03CD" [ref=e1861] [cursor=pointer]:
+        - generic [ref=e1862]: ύ
+      - button "U+03CE" [ref=e1863] [cursor=pointer]:
+        - generic [ref=e1864]: ώ
+      - button "U+03CF" [ref=e1865] [cursor=pointer]:
+        - generic [ref=e1866]: Ϗ
+      - button "U+03D0" [ref=e1867] [cursor=pointer]:
+        - generic [ref=e1868]: ϐ
+      - button "U+03D1" [ref=e1869] [cursor=pointer]:
+        - generic [ref=e1870]: ϑ
+      - button "U+03D2" [ref=e1871] [cursor=pointer]:
+        - generic [ref=e1872]: ϒ
+      - button "U+03D3" [ref=e1873] [cursor=pointer]:
+        - generic [ref=e1874]: ϓ
+      - button "U+03D4" [ref=e1875] [cursor=pointer]:
+        - generic [ref=e1876]: ϔ
+      - button "U+03D5" [ref=e1877] [cursor=pointer]:
+        - generic [ref=e1878]: ϕ
+      - button "U+03D6" [ref=e1879] [cursor=pointer]:
+        - generic [ref=e1880]: ϖ
+      - button "U+03D7" [ref=e1881] [cursor=pointer]:
+        - generic [ref=e1882]: ϗ
+      - button "U+03D8" [ref=e1883] [cursor=pointer]:
+        - generic [ref=e1884]: Ϙ
+      - button "U+03D9" [ref=e1885] [cursor=pointer]:
+        - generic [ref=e1886]: ϙ
+      - button "U+03DA" [ref=e1887] [cursor=pointer]:
+        - generic [ref=e1888]: Ϛ
+      - button "U+03DB" [ref=e1889] [cursor=pointer]:
+        - generic [ref=e1890]: ϛ
+      - button "U+03DC" [ref=e1891] [cursor=pointer]:
+        - generic [ref=e1892]: Ϝ
+      - button "U+03DD" [ref=e1893] [cursor=pointer]:
+        - generic [ref=e1894]: ϝ
+      - button "U+03DE" [ref=e1895] [cursor=pointer]:
+        - generic [ref=e1896]: Ϟ
+      - button "U+03DF" [ref=e1897] [cursor=pointer]:
+        - generic [ref=e1898]: ϟ
+      - button "U+03E0" [ref=e1899] [cursor=pointer]:
+        - generic [ref=e1900]: Ϡ
+      - button "U+03E1" [ref=e1901] [cursor=pointer]:
+        - generic [ref=e1902]: ϡ
+      - button "U+03E2" [ref=e1903] [cursor=pointer]:
+        - generic [ref=e1904]: Ϣ
+      - button "U+03E3" [ref=e1905] [cursor=pointer]:
+        - generic [ref=e1906]: ϣ
+      - button "U+03E4" [ref=e1907] [cursor=pointer]:
+        - generic [ref=e1908]: Ϥ
+      - button "U+03E5" [ref=e1909] [cursor=pointer]:
+        - generic [ref=e1910]: ϥ
+      - button "U+03E6" [ref=e1911] [cursor=pointer]:
+        - generic [ref=e1912]: Ϧ
+      - button "U+03E7" [ref=e1913] [cursor=pointer]:
+        - generic [ref=e1914]: ϧ

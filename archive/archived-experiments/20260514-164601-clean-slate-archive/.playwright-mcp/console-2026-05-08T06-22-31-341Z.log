@@ -1,0 +1,11 @@
+[   16829ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/src/floral-terminal.ts?t=1778221368165:0
+[   16829ms] [ERROR] [vite] Failed to reload /src/App.svelte. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:5173/@vite/client:808
+[   16829ms] TypeError: Cannot read properties of undefined (reading 'default')
+    at http://127.0.0.1:5173/src/App.svelte?t=1778221321464:447:28
+    at http://127.0.0.1:5173/@vite/client:72:58
+    at http://127.0.0.1:5173/@vite/client:218:52
+    at http://127.0.0.1:5173/@vite/client:196:55
+    at Array.forEach (<anonymous>)
+    at HMRClient.queueUpdate (http://127.0.0.1:5173/@vite/client:196:33)
+    at async Promise.all (index 0)
+    at async handleMessage (http://127.0.0.1:5173/@vite/client:838:4)
