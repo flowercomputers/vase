@@ -60,7 +60,11 @@ ESC[38;5;Nm
 
 It does not use truecolor. That is deliberate: truecolor does not reliably degrade to 256 colors, and ANSI 256 is a better default for terminal screenshots, tmux panes, logs, and unknown terminal environments.
 
-`--plain` disables color entirely.
+`--plain` disables color entirely. To keep foreground colors while pushing the background back into terminal gray/bright-black, use:
+
+```sh
+npm run avatar -- --muted-background
+```
 
 ## Color Direction
 
@@ -198,6 +202,12 @@ Raise contrast:
 
 ```sh
 node avatar-grid.js --min-contrast=5.5
+```
+
+Mute background color:
+
+```sh
+node avatar-grid.js --muted-background
 ```
 
 Show metadata or rulers:

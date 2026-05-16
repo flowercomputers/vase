@@ -6,6 +6,7 @@ const RULER = '0123456789abcdefg';
 const ANSI = {
   reset: '\x1b[0m',
 };
+const MUTED_BACKGROUND_COLOR = { code: 8 };
 const MIN_CONTRAST = 4.5;
 const MAX_PATTERN_CONTRAST = 2.2;
 const PAINT_PATTERNS = new Set([
@@ -434,7 +435,9 @@ function renderCell(cell, useColor, colorway, context) {
   if (cell.background !== ' ') {
     return paint(
       cell.background,
-      shadeFor({ char: cell.background, layerColors: colorway.background, layer: 'background', ...context }),
+      context.mutedBackground
+        ? MUTED_BACKGROUND_COLOR
+        : shadeFor({ char: cell.background, layerColors: colorway.background, layer: 'background', ...context }),
       useColor,
     );
   }
@@ -446,13 +449,14 @@ function renderAvatar(
   {
     color = true,
     ruler = false,
+    mutedBackground = false,
     colorway = defaultColorway(MIN_CONTRAST),
     patternOptions = defaultPatternOptions(),
   } = {},
 ) {
   const lines = avatar.map((line, y) => {
     const body = line
-      .map((cell, x) => renderCell(cell, color, colorway, { x, y, patternOptions }))
+      .map((cell, x) => renderCell(cell, color, colorway, { x, y, mutedBackground, patternOptions }))
       .join('');
     return ruler ? `${y + 1}  ${body}` : body;
   });
@@ -885,6 +889,7 @@ function cliOptions() {
   return {
     all: hasFlag('--all'),
     color: !hasFlag('--plain'),
+    mutedBackground: hasFlag('--muted-background') || hasFlag('--dim-background'),
     ruler: hasFlag('--ruler') && !hasFlag('--no-ruler'),
     metadata: hasFlag('--info') || hasFlag('--metadata') || hasFlag('--debug'),
     background: selectedIndex('--background', backgrounds),
@@ -950,6 +955,7 @@ Paint pattern levers:
 
 Output:
   --plain                     Disable ANSI color
+  --muted-background          Render background cells in bright-black/gray
   --info, --metadata          Print selected glyph/color/pattern metadata
   --ruler                     Show row/column rulers
   --no-ruler                  Hide row/column rulers, kept for old commands
@@ -962,6 +968,7 @@ function render({
   all = false,
   color = true,
   ruler = false,
+  mutedBackground = false,
   metadata = false,
   background = null,
   foreground = null,
@@ -992,7 +999,7 @@ function render({
       console.log(colorwayLabel(colorway));
       if (patternLabel(patternOptions)) console.log(patternLabel(patternOptions));
     }
-    console.log(renderAvatar(avatar, { color, ruler, colorway, patternOptions }));
+    console.log(renderAvatar(avatar, { color, ruler, mutedBackground, colorway, patternOptions }));
     return;
   }
 
@@ -1009,7 +1016,7 @@ function render({
       console.log(colorwayLabel(colorway));
       if (patternLabel(patternOptions)) console.log(patternLabel(patternOptions));
     }
-    console.log(renderAvatar(avatar, { color, ruler, colorway, patternOptions }));
+    console.log(renderAvatar(avatar, { color, ruler, mutedBackground, colorway, patternOptions }));
   });
 }
 
