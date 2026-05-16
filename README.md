@@ -3,6 +3,7 @@
 This repository contains `avatar-grid.js`, a small terminal avatar generator built from fixed 9x17 text templates. The script is intentionally plain Node, with no runtime dependencies, so it can be run directly while iterating on the visual grammar:
 
 ```sh
+cd "/Users/edouard/Developer/Flower Computer Company/vase"
 npm run avatar
 npm run avatar -- --paint-pattern=mixed
 node avatar-grid.js --background=15 --foreground=9 --plain
