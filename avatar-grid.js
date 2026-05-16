@@ -433,7 +433,7 @@ function renderAvatar(
   avatar,
   {
     color = true,
-    ruler = true,
+    ruler = false,
     colorway = defaultColorway(MIN_CONTRAST),
     patternOptions = defaultPatternOptions(),
   } = {},
@@ -834,7 +834,8 @@ function cliOptions() {
   return {
     all: hasFlag('--all'),
     color: !hasFlag('--plain'),
-    ruler: !hasFlag('--no-ruler'),
+    ruler: hasFlag('--ruler') && !hasFlag('--no-ruler'),
+    metadata: hasFlag('--info') || hasFlag('--metadata') || hasFlag('--debug'),
     background: selectedIndex('--background', backgrounds),
     foreground: selectedIndex('--foreground', foregrounds),
     backgroundOnly: hasFlag('--background-only'),
@@ -896,7 +897,9 @@ Paint pattern levers:
 
 Output:
   --plain                     Disable ANSI color
-  --no-ruler                  Hide row/column rulers
+  --info, --metadata          Print selected glyph/color/pattern metadata
+  --ruler                     Show row/column rulers
+  --no-ruler                  Hide row/column rulers, kept for old commands
   --all                       Render every foreground on random backgrounds
   --list-colors               Print available color names/codes
 `);
@@ -905,7 +908,8 @@ Output:
 function render({
   all = false,
   color = true,
-  ruler = true,
+  ruler = false,
+  metadata = false,
   background = null,
   foreground = null,
   backgroundOnly = false,
@@ -924,15 +928,17 @@ function render({
     });
     const colorway = randomColorway(colorwayOptions);
 
-    console.log(
-      backgroundOnly
-        ? `background ${backgroundIndex + 1}`
-        : foregroundOnly
-          ? `foreground ${foregroundIndex + 1}`
-        : `background ${backgroundIndex + 1} + foreground ${foregroundIndex + 1}`,
-    );
-    if (color) console.log(colorwayLabel(colorway));
-    if (color && patternLabel(patternOptions)) console.log(patternLabel(patternOptions));
+    if (metadata) {
+      console.log(
+        backgroundOnly
+          ? `background ${backgroundIndex + 1}`
+          : foregroundOnly
+            ? `foreground ${foregroundIndex + 1}`
+          : `background ${backgroundIndex + 1} + foreground ${foregroundIndex + 1}`,
+      );
+      console.log(colorwayLabel(colorway));
+      if (patternLabel(patternOptions)) console.log(patternLabel(patternOptions));
+    }
     console.log(renderAvatar(avatar, { color, ruler, colorway, patternOptions }));
     return;
   }
@@ -944,9 +950,12 @@ function render({
       trimForegroundGutter: FOREGROUND_GUTTER_FIXES.has(foregroundIndex),
     });
     const colorway = randomColorway(colorwayOptions);
-    console.log(`\nforeground ${foregroundIndex + 1} on background ${backgroundIndex + 1}`);
-    if (color) console.log(colorwayLabel(colorway));
-    if (color && patternLabel(patternOptions)) console.log(patternLabel(patternOptions));
+    if (foregroundIndex > 0) console.log('');
+    if (metadata) {
+      console.log(`foreground ${foregroundIndex + 1} on background ${backgroundIndex + 1}`);
+      console.log(colorwayLabel(colorway));
+      if (patternLabel(patternOptions)) console.log(patternLabel(patternOptions));
+    }
     console.log(renderAvatar(avatar, { color, ruler, colorway, patternOptions }));
   });
 }

@@ -9,6 +9,8 @@ npm run avatar -- --paint-pattern=mixed
 node avatar-grid.js --background=15 --foreground=9 --plain
 ```
 
+By default, the command prints only the 9x17 avatar. Use `--info` for generation metadata and `--ruler` for row/column rulers.
+
 ## Core Model
 
 The generator has four primary variable categories:
@@ -44,8 +46,8 @@ There are targeted gutter-fix sets in the script for backgrounds and foregrounds
 Useful probes:
 
 ```sh
-node avatar-grid.js --background=15 --background-only --plain
-node avatar-grid.js --foreground=1 --foreground-only --plain
+node avatar-grid.js --background=15 --background-only --plain --ruler
+node avatar-grid.js --foreground=1 --foreground-only --plain --ruler
 ```
 
 ## Terminal Color Assumptions
@@ -193,10 +195,11 @@ Raise contrast:
 node avatar-grid.js --min-contrast=5.5
 ```
 
-Remove rulers:
+Show metadata or rulers:
 
 ```sh
-node avatar-grid.js --no-ruler
+node avatar-grid.js --info
+node avatar-grid.js --ruler
 ```
 
 ## Notes For Future Agents
