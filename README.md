@@ -119,7 +119,11 @@ Available patterns:
 ```text
 solid
 gradient
+row-gradient
+column-gradient
+radial
 speckle
+sparkle
 ripple
 bands
 checker
@@ -132,6 +136,7 @@ Examples:
 npm run avatar -- --paint-pattern=mixed
 npm run avatar -- --background-pattern=gradient --foreground-pattern=speckle
 npm run avatar -- --paint-pattern=ripple --pattern-strength=0.25 --pattern-scale=1.5 --pattern-seed=42
+npm run avatar -- --background-pattern=radial --foreground-pattern=sparkle
 ```
 
 The pattern system only swaps between the two selected colors inside each layer. It has two guardrails:

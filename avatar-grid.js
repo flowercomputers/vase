@@ -8,7 +8,19 @@ const ANSI = {
 };
 const MIN_CONTRAST = 4.5;
 const MAX_PATTERN_CONTRAST = 2.2;
-const PAINT_PATTERNS = new Set(['solid', 'gradient', 'speckle', 'ripple', 'bands', 'checker', 'mixed']);
+const PAINT_PATTERNS = new Set([
+  'solid',
+  'gradient',
+  'row-gradient',
+  'column-gradient',
+  'radial',
+  'speckle',
+  'sparkle',
+  'ripple',
+  'bands',
+  'checker',
+  'mixed',
+]);
 const ANALOGOUS_FAMILIES = {
   green: new Set(['green', 'yellow']),
   yellow: new Set(['yellow', 'green']),
@@ -466,19 +478,33 @@ function patternShadeIndex({ x, y, layer, baseIndex, patternOptions }) {
   const strength = clamp(patternOptions.strength, 0, 1);
   const scale = Math.max(0.25, patternOptions.scale);
   const signal = patternSignal({ pattern, x, y, layer, scale, seed: patternOptions.seed });
-  const threshold = 1 - strength;
+  const threshold = pattern === 'sparkle' ? 1 - strength * 0.35 : 1 - strength;
   return signal > threshold ? 1 - baseIndex : baseIndex;
 }
 
 function resolvedPattern(pattern, layer, seed) {
   if (pattern !== 'mixed') return pattern;
-  const choices = ['gradient', 'speckle', 'ripple', 'bands', 'checker'];
+  const choices = [
+    'gradient',
+    'row-gradient',
+    'column-gradient',
+    'radial',
+    'speckle',
+    'sparkle',
+    'ripple',
+    'bands',
+    'checker',
+  ];
   return choices[Math.floor(hash01(0, 0, layer, seed) * choices.length)];
 }
 
 function patternSignal({ pattern, x, y, layer, scale, seed }) {
   if (pattern === 'gradient') return gradientSignal(x, y, scale);
+  if (pattern === 'row-gradient') return rowGradientSignal(y, scale);
+  if (pattern === 'column-gradient') return columnGradientSignal(x, scale);
+  if (pattern === 'radial') return radialSignal(x, y, scale);
   if (pattern === 'speckle') return hash01(x, y, layer, seed);
+  if (pattern === 'sparkle') return sparkleSignal(x, y, layer, seed);
   if (pattern === 'ripple') return rippleSignal(x, y, layer, scale, seed);
   if (pattern === 'bands') return bandSignal(x, y, layer, scale, seed);
   if (pattern === 'checker') return checkerSignal(x, y, scale);
@@ -489,6 +515,31 @@ function gradientSignal(x, y, scale) {
   const nx = x / (WIDTH - 1);
   const ny = y / (HEIGHT - 1);
   return clamp((nx * 0.68 + ny * 0.32) * scale, 0, 1);
+}
+
+function rowGradientSignal(y, scale) {
+  return clamp((y / (HEIGHT - 1)) * scale, 0, 1);
+}
+
+function columnGradientSignal(x, scale) {
+  return clamp((x / (WIDTH - 1)) * scale, 0, 1);
+}
+
+function radialSignal(x, y, scale) {
+  const cx = (WIDTH - 1) / 2;
+  const cy = (HEIGHT - 1) / 2;
+  const maxDistance = Math.hypot(cx, cy * 1.8);
+  const distance = Math.hypot(x - cx, (y - cy) * 1.8);
+  return clamp((distance / maxDistance) * scale, 0, 1);
+}
+
+function sparkleSignal(x, y, layer, seed) {
+  const localNoise = hash01(x, y, layer, seed);
+  if (localNoise < 0.82) return 0;
+
+  // A tiny coordinate shimmer keeps sparkle sparse and point-like instead of
+  // becoming ordinary speckle at the default pattern strength.
+  return 0.9 + hash01(x + 17, y + 9, layer, seed) * 0.1;
 }
 
 function rippleSignal(x, y, layer, scale, seed) {
@@ -886,7 +937,9 @@ Color levers:
 
 Paint pattern levers:
   --paint-pattern=gradient    Apply a color pattern to both layers
-                              solid, gradient, speckle, ripple, bands, checker, mixed
+                              solid, gradient, row-gradient, column-gradient,
+                              radial, speckle, sparkle, ripple, bands, checker,
+                              mixed
   --background-pattern=...    Override background paint pattern
   --foreground-pattern=...    Override foreground paint pattern
   --pattern-strength=0.35     How often/intensely the alternate layer color appears
