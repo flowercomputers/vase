@@ -1,0 +1,11 @@
+{
+  "name": "vase",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "avatar": "node avatar-grid.js",
+    "web": "python3 -m http.server 4173",
+    "start": "node avatar-grid.js"
+  }
+}

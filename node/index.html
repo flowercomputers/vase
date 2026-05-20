@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vase Avatar Grid</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f5f0;
+        --ink: #181512;
+        --muted: #77736c;
+        --line: #ded8ce;
+        --panel: #fffdf8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: minmax(280px, 1fr) minmax(280px, 380px);
+        gap: 28px;
+        width: min(1120px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 32px 0;
+        align-items: start;
+      }
+
+      .stage {
+        display: grid;
+        place-items: center;
+        min-height: calc(100vh - 64px);
+      }
+
+      .avatar-frame {
+        width: min(72vh, 100%);
+        max-width: 720px;
+        aspect-ratio: 1;
+        background:
+          linear-gradient(var(--line) 1px, transparent 1px),
+          linear-gradient(90deg, var(--line) 1px, transparent 1px),
+          var(--panel);
+        background-size: calc(100% / 17) calc(100% / 9);
+        border: 1px solid var(--line);
+      }
+
+      svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      aside {
+        display: grid;
+        gap: 16px;
+        padding-top: 8px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+
+      .controls {
+        display: grid;
+        gap: 12px;
+      }
+
+      label {
+        display: grid;
+        gap: 6px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      select,
+      button {
+        width: 100%;
+        min-height: 36px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--panel);
+        color: var(--ink);
+        font: inherit;
+        font-size: 14px;
+      }
+
+      select {
+        padding: 0 10px;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      button:hover {
+        border-color: #b9b0a2;
+      }
+
+      .meta {
+        display: grid;
+        gap: 6px;
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .swatches {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .swatch {
+        width: 24px;
+        height: 24px;
+        border: 1px solid rgba(0, 0, 0, 0.18);
+      }
+
+      @media (max-width: 800px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+
+        .stage {
+          min-height: auto;
+        }
+
+        aside {
+          padding-top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="stage" aria-label="Generated SVG avatar">
+        <div class="avatar-frame" id="avatar"></div>
+      </section>
+
+      <aside>
+        <h1>Vase Avatar Grid</h1>
+        <div class="controls">
+          <label>
+            Paint
+            <select id="pattern"></select>
+          </label>
+          <label>
+            Background
+            <select id="background"></select>
+          </label>
+          <label>
+            Foreground
+            <select id="foreground"></select>
+          </label>
+          <button id="generate" type="button">Generate</button>
+        </div>
+        <div class="swatches" id="swatches" aria-label="Selected colors"></div>
+        <div class="meta" id="meta"></div>
+      </aside>
+    </main>
+
+    <script type="module">
+      import {
+        HEIGHT,
+        MAX_PATTERN_CONTRAST,
+        MIN_CONTRAST,
+        PAINT_PATTERNS,
+        WIDTH,
+        backgrounds,
+        colorwayLabel,
+        foregrounds,
+        generateAvatarModel,
+        patternLabel,
+        shadeFor,
+      } from './avatar-grid.js';
+
+      const SVG_NS = 'http://www.w3.org/2000/svg';
+      const SIZE = 1024;
+      const cellWidth = SIZE / WIDTH;
+      const cellHeight = SIZE / HEIGHT;
+      const strokeWidth = Math.min(cellWidth, cellHeight) * 0.13;
+      const patternSelect = document.querySelector('#pattern');
+      const backgroundSelect = document.querySelector('#background');
+      const foregroundSelect = document.querySelector('#foreground');
+      const avatarHost = document.querySelector('#avatar');
+      const meta = document.querySelector('#meta');
+      const swatches = document.querySelector('#swatches');
+
+      function option(value, label) {
+        const node = document.createElement('option');
+        node.value = value;
+        node.textContent = label;
+        return node;
+      }
+
+      patternSelect.append(option('mixed', 'mixed'));
+      for (const pattern of PAINT_PATTERNS) {
+        if (pattern !== 'mixed') patternSelect.append(option(pattern, pattern));
+      }
+
+      backgroundSelect.append(option('random', 'random'));
+      backgrounds.forEach((_, index) => backgroundSelect.append(option(String(index + 1), `background ${index + 1}`)));
+
+      foregroundSelect.append(option('random', 'random'));
+      foregrounds.forEach((_, index) => foregroundSelect.append(option(String(index + 1), `foreground ${index + 1}`)));
+
+      document.querySelector('#generate').addEventListener('click', generate);
+
+      function generate() {
+        const paintPattern = patternSelect.value;
+        const patternOptions = {
+          background: paintPattern,
+          foreground: paintPattern,
+          strength: 0.35,
+          scale: 1,
+          seed: Math.floor(Math.random() * 1_000_000),
+          looseFamilies: false,
+        };
+        const patternIsActive = paintPattern !== 'solid';
+        const model = generateAvatarModel({
+          background: selectedIndex(backgroundSelect),
+          foreground: selectedIndex(foregroundSelect),
+          patternOptions,
+          colorwayOptions: {
+            minContrast: MIN_CONTRAST,
+            darkBackgroundRate: 0,
+            maxPatternContrast: patternIsActive ? MAX_PATTERN_CONTRAST : null,
+            requireBackgroundVariation: patternIsActive,
+            requireForegroundVariation: patternIsActive,
+            requireLayerCoherence: patternIsActive,
+          },
+        });
+
+        avatarHost.replaceChildren(renderSvg(model));
+        renderMeta(model);
+      }
+
+      function selectedIndex(select) {
+        return select.value === 'random' ? null : Number(select.value) - 1;
+      }
+
+      function renderSvg(model) {
+        const svg = document.createElementNS(SVG_NS, 'svg');
+        svg.setAttribute('viewBox', `0 0 ${SIZE} ${SIZE}`);
+        svg.setAttribute('role', 'img');
+        svg.setAttribute('aria-label', 'Square SVG avatar generated from the 9 by 17 text grid');
+
+        for (let y = 0; y < HEIGHT; y += 1) {
+          for (let x = 0; x < WIDTH; x += 1) {
+            const drawn = renderedCell(model, x, y);
+            if (!drawn) continue;
+            drawGlyph(svg, drawn.char, x, y, drawn.color);
+          }
+        }
+
+        return svg;
+      }
+
+      function renderedCell(model, x, y) {
+        const cell = model.avatar[y][x];
+        if (cell.foreground !== ' ') {
+          return {
+            char: cell.foreground,
+            color: shadeFor({
+              char: cell.foreground,
+              layerColors: model.colorway.foreground,
+              x,
+              y,
+              layer: 'foreground',
+              patternOptions: model.patternOptions,
+            }),
+          };
+        }
+        if (cell.background !== ' ') {
+          return {
+            char: cell.background,
+            color: shadeFor({
+              char: cell.background,
+              layerColors: model.colorway.background,
+              x,
+              y,
+              layer: 'background',
+              patternOptions: model.patternOptions,
+            }),
+          };
+        }
+        return null;
+      }
+
+      function drawGlyph(svg, glyph, gridX, gridY, color) {
+        const x = gridX * cellWidth;
+        const y = gridY * cellHeight;
+        const hex = toHex(color.rgb);
+
+        if (glyph === '█' || glyph === '▓') {
+          rect(svg, x + cellWidth * 0.08, y + cellHeight * 0.06, cellWidth * 0.84, cellHeight * 0.88, hex);
+          return;
+        }
+
+        if (glyph === '░' || glyph === '▒') {
+          stipple(svg, x, y, hex, glyph === '▒' ? 12 : 7);
+          return;
+        }
+
+        if (glyph === '─') return line(svg, x, y + cellHeight / 2, x + cellWidth, y + cellHeight / 2, hex);
+        if (glyph === '│') return line(svg, x + cellWidth / 2, y, x + cellWidth / 2, y + cellHeight, hex);
+        if (glyph === '┼' || glyph === '╬') {
+          line(svg, x, y + cellHeight / 2, x + cellWidth, y + cellHeight / 2, hex);
+          line(svg, x + cellWidth / 2, y, x + cellWidth / 2, y + cellHeight, hex);
+          return;
+        }
+        if (glyph === '╳') {
+          line(svg, x + cellWidth * 0.16, y + cellHeight * 0.12, x + cellWidth * 0.84, y + cellHeight * 0.88, hex);
+          line(svg, x + cellWidth * 0.84, y + cellHeight * 0.12, x + cellWidth * 0.16, y + cellHeight * 0.88, hex);
+          return;
+        }
+        if (glyph === '╱') return line(svg, x + cellWidth * 0.16, y + cellHeight * 0.88, x + cellWidth * 0.84, y + cellHeight * 0.12, hex);
+        if (glyph === '╲') return line(svg, x + cellWidth * 0.16, y + cellHeight * 0.12, x + cellWidth * 0.84, y + cellHeight * 0.88, hex);
+
+        const cornerPath = corner(glyph, x, y);
+        if (cornerPath) {
+          path(svg, cornerPath, hex);
+          return;
+        }
+
+        if (glyph === '◓' || glyph === '◐' || glyph === '◑' || glyph === '◒') {
+          halfCircle(svg, glyph, x, y, hex);
+          return;
+        }
+
+        fallbackText(svg, glyph, x, y, hex);
+      }
+
+      function rect(svg, x, y, width, height, fill) {
+        const node = document.createElementNS(SVG_NS, 'rect');
+        node.setAttribute('x', x);
+        node.setAttribute('y', y);
+        node.setAttribute('width', width);
+        node.setAttribute('height', height);
+        node.setAttribute('fill', fill);
+        svg.append(node);
+      }
+
+      function line(svg, x1, y1, x2, y2, stroke) {
+        const node = document.createElementNS(SVG_NS, 'line');
+        node.setAttribute('x1', x1);
+        node.setAttribute('y1', y1);
+        node.setAttribute('x2', x2);
+        node.setAttribute('y2', y2);
+        node.setAttribute('stroke', stroke);
+        node.setAttribute('stroke-width', strokeWidth);
+        node.setAttribute('stroke-linecap', 'round');
+        svg.append(node);
+      }
+
+      function path(svg, d, stroke) {
+        const node = document.createElementNS(SVG_NS, 'path');
+        node.setAttribute('d', d);
+        node.setAttribute('fill', 'none');
+        node.setAttribute('stroke', stroke);
+        node.setAttribute('stroke-width', strokeWidth);
+        node.setAttribute('stroke-linecap', 'round');
+        node.setAttribute('stroke-linejoin', 'round');
+        svg.append(node);
+      }
+
+      function corner(glyph, x, y) {
+        const cx = x + cellWidth / 2;
+        const cy = y + cellHeight / 2;
+        const left = x;
+        const right = x + cellWidth;
+        const top = y;
+        const bottom = y + cellHeight;
+
+        if (glyph === '╭') return `M ${cx} ${bottom} Q ${cx} ${cy} ${right} ${cy}`;
+        if (glyph === '╮') return `M ${left} ${cy} Q ${cx} ${cy} ${cx} ${bottom}`;
+        if (glyph === '╰') return `M ${cx} ${top} Q ${cx} ${cy} ${right} ${cy}`;
+        if (glyph === '╯') return `M ${left} ${cy} Q ${cx} ${cy} ${cx} ${top}`;
+        return null;
+      }
+
+      function stipple(svg, x, y, fill, count) {
+        const cols = count > 8 ? 3 : 2;
+        const rows = count > 8 ? 4 : 3;
+        const radius = Math.min(cellWidth, cellHeight) * 0.055;
+        let drawn = 0;
+
+        for (let row = 0; row < rows; row += 1) {
+          for (let col = 0; col < cols; col += 1) {
+            if (drawn >= count) return;
+            const dot = document.createElementNS(SVG_NS, 'circle');
+            dot.setAttribute('cx', x + ((col + 0.5) / cols) * cellWidth);
+            dot.setAttribute('cy', y + ((row + 0.5) / rows) * cellHeight);
+            dot.setAttribute('r', radius);
+            dot.setAttribute('fill', fill);
+            svg.append(dot);
+            drawn += 1;
+          }
+        }
+      }
+
+      function halfCircle(svg, glyph, x, y, fill) {
+        const cx = x + cellWidth / 2;
+        const cy = y + cellHeight / 2;
+        const rx = cellWidth * 0.34;
+        const ry = cellHeight * 0.24;
+        const start = {
+          '◓': [cx - rx, cy],
+          '◐': [cx, cy - ry],
+          '◑': [cx, cy - ry],
+          '◒': [cx - rx, cy],
+        }[glyph];
+        const end = {
+          '◓': [cx + rx, cy],
+          '◐': [cx, cy + ry],
+          '◑': [cx, cy + ry],
+          '◒': [cx + rx, cy],
+        }[glyph];
+        const sweep = glyph === '◓' || glyph === '◑' ? 1 : 0;
+        const d = `M ${start[0]} ${start[1]} A ${rx} ${ry} 0 0 ${sweep} ${end[0]} ${end[1]}`;
+        path(svg, d, fill);
+      }
+
+      function fallbackText(svg, glyph, x, y, fill) {
+        const node = document.createElementNS(SVG_NS, 'text');
+        node.textContent = glyph;
+        node.setAttribute('x', x + cellWidth / 2);
+        node.setAttribute('y', y + cellHeight * 0.68);
+        node.setAttribute('fill', fill);
+        node.setAttribute('font-size', Math.min(cellWidth, cellHeight) * 0.8);
+        node.setAttribute('font-family', 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace');
+        node.setAttribute('text-anchor', 'middle');
+        svg.append(node);
+      }
+
+      function renderMeta(model) {
+        meta.replaceChildren(
+          textLine(`background ${model.backgroundIndex + 1} + foreground ${model.foregroundIndex + 1}`),
+          textLine(colorwayLabel(model.colorway)),
+          textLine(patternLabel(model.patternOptions) ?? 'paint solid'),
+        );
+        swatches.replaceChildren(
+          ...model.colorway.background.map((color) => swatch(color, 'background')),
+          ...model.colorway.foreground.map((color) => swatch(color, 'foreground')),
+        );
+      }
+
+      function textLine(value) {
+        const node = document.createElement('div');
+        node.textContent = value;
+        return node;
+      }
+
+      function swatch(color, layer) {
+        const node = document.createElement('div');
+        node.className = 'swatch';
+        node.title = `${layer}: ${color.name}`;
+        node.style.background = toHex(color.rgb);
+        return node;
+      }
+
+      function toHex(rgb) {
+        return `#${rgb.map((channel) => channel.toString(16).padStart(2, '0')).join('')}`;
+      }
+
+      generate();
+    </script>
+  </body>
+</html>
